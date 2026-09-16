@@ -1,0 +1,12 @@
+# Archivos temporales de LaTeX
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.out
+*.run.xml
+*.synctex(busy)
+*.synctex.gz
+*.fls
+*.fdb_latexmk

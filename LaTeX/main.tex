@@ -1,0 +1,191 @@
+\documentclass[12pt, letterpaper]{article}
+
+% ==============================================================================
+% 1. TIPOGRAFÍA (Times New Roman 12 pt)
+% ==============================================================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% 'newtxtext' y 'newtxmath' proporcionan la tipografía Times New Roman nativa para pdfLaTeX
+\usepackage{newtxtext,newtxmath}
+
+% ==============================================================================
+% 2. IDIOMA Y MÁRGENES APA 7
+% ==============================================================================
+\usepackage[spanish, es-tabla, es-nodecimaldot, es-noindentfirst]{babel}
+% Márgenes reglamentarios APA 7: 2.54 cm (1 pulgada) por cada lado
+\usepackage[letterpaper, margin=2.54cm]{geometry}
+
+% ==============================================================================
+% 3. INTERLINEADO (21 pt) Y SANGRÍA A PARTIR DEL SEGUNDO PÁRRAFO
+% ==============================================================================
+% Fuente a 12pt con interlineado (baselineskip / leading) estricto de 21pt:
+\renewcommand{\normalsize}{\fontsize{12pt}{21pt}\selectfont}
+\normalsize
+
+% Sangría estándar APA 7 (1.27 cm / 0.5 in)
+\setlength{\parindent}{1.27cm}
+% Sin espacio adicional entre párrafos (separación por sangría)
+\setlength{\parskip}{0pt}
+
+% Desactiva la sangría en el primer párrafo tras títulos/secciones y la activa
+% automáticamente a partir del segundo párrafo en adelante:
+\makeatletter
+\let\@afterindenttrue\@afterindentfalse
+\@afterindentfalse
+\makeatother
+
+% ==============================================================================
+% 4. BIBLIOGRAFÍA APA 7 (BibLaTeX + Biber)
+% ==============================================================================
+\usepackage{csquotes}
+\usepackage[
+    backend=biber,
+    style=apa,
+    sortcites=true,
+    sorting=nyt
+]{biblatex}
+
+% Crea un archivo 'referencias.bib' en tu proyecto de Overleaf para tus citas
+\addbibresource{../references.bib}
+
+% ==============================================================================
+% 5. ENCABEZADO Y NUMERACIÓN DE PÁGINA (APA 7)
+% ==============================================================================
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage} % Número en la esquina superior derecha
+\fancyhead[L]{\small\MakeUppercase{TÍTULO CORTO DEL TRABAJO}} % Cornisa (opcional)
+\renewcommand{\headrulewidth}{0pt} % Sin línea horizontal
+\setlength{\headheight}{15pt}
+
+% ==============================================================================
+% 6. FORMATO DE SECCIONES (NIVELES APA 7)
+% ==============================================================================
+\usepackage{titlesec}
+
+% Nivel 1: Centrado, Negrita
+\titleformat{\section}
+  {\normalfont\fontsize{12pt}{21pt}\selectfont\bfseries\centering}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{18pt}{6pt}
+
+% Nivel 2: Alineado a la izquierda, Negrita
+\titleformat{\subsection}
+  {\normalfont\fontsize{12pt}{21pt}\selectfont\bfseries\raggedright}{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{14pt}{6pt}
+
+% Nivel 3: Alineado a la izquierda, Negrita y Cursiva
+\titleformat{\subsubsection}
+  {\normalfont\fontsize{12pt}{21pt}\selectfont\bfseries\itshape\raggedright}{\thesubsubsection}{1em}{}
+\titlespacing*{\subsubsection}{0pt}{12pt}{6pt}
+
+% ==============================================================================
+% 7. TABLAS, FIGURAS Y ENLACES
+% ==============================================================================
+\usepackage{booktabs}
+\usepackage{caption}
+\captionsetup{
+    font={normalsize},
+    labelfont=bf,
+    labelsep=newline,
+    justification=raggedright,
+    singlelinecheck=false
+}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=blue
+}
+
+% ==============================================================================
+% DATOS INICIALES
+% ==============================================================================
+\title{\textbf{Título de la Investigación}}
+\author{Nombre del Autor}
+\date{\today}
+
+% ==============================================================================
+% INICIO DEL DOCUMENTO
+% ==============================================================================
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\fontsize{14pt}{24pt}\selectfont \textbf{Habilidades requeridas por los ingenieros de software ante la llegada de la IA}\par}
+    \vspace{2.5cm}
+    {\fontsize{12pt}{21pt}\selectfont
+    \textbf{Abraham Giovani Barrera Torres}\\[0.5cm]
+    Universidad Veracruzana\\[0.3cm]
+    Proyecto Guiado\\[0.3cm]
+    Dra. Ma. Teresa de la Luz Sainz Barajas\\[0.3cm]
+    \today\par}
+    \vfill
+\end{titlepage}
+
+% Resumen
+\section*{Resumen}
+Este es el primer párrafo del resumen. Siguiendo tu especificación, este párrafo inicial no tiene sangría en su primera línea. Aquí se sintetiza el problema, la metodología y los resultados centrales.
+
+A partir de este segundo párrafo, se aplica de forma automática la sangría reglamentaria de 1.27 cm (media pulgada), manteniendo el interlineado continuo de 21 puntos.
+
+\vspace{0.8cm}
+\noindent \textit{Palabras clave:} APA 7, LaTeX, Overleaf, Tipografía.
+
+\newpage
+
+% Introducción
+\section{Situación problemática y problema de investigación}
+
+Desde sus inicios en 1968 en la OTAN, la Ingeniería de Software ha tenido cambios constantes que se han dirigido desde un enfoque en el hardware hacia una visión centrada en el usuario \parencite{11645215}. El software ya no es solamente un sistema de uso científico o ingenieril, sino que se ha convertido en un producto de uso cotidiano al alcance del hombre común.
+
+Por otro lado, el uso de inteligencia artificial en el desarrollo de software cobró relevancia en 2024 cuando aumentaron las herramientas y tecnologías potenciadas por asistentes de codificación. Luego, los agentes de IA ya eran capaces de interactuar con herramientas de terceros, realizar búsquedas en la web, y actuar sobre el entorno digital, dejando de ser una herramienta secundaria a un componente activo en el desarrollo. Fue en 2025 que Andrej Karpathy hizo uso del concepto de “Vibe Coding” para referirse a la generación de código mediante lenguaje natural \parencite{11404330}.
+
+Frente a esta situación, ignorar el uso de la inteligencia artificial es una posición de desventaja frente a las necesidades del desarrollo moderno, que exige tiempos y dinámicas más rápidas. Si el vibe coding resulta ahora indispensable para el desarrollo, entonces el problema es reconocer las nuevas prácticas, habilidades, procesos y metodologías que respondan eficientemente a las tendencias actuales.
+
+\subsection{Formulación del problema}
+
+A partir de la transición desde el desarrollo tradicional hacia un modelo fundamentado en la orquestación mediante agentes autónomos de inteligencia artificial, surge la necesidad de replantear los principios actuales de la disciplina. Siendo así, el problema central radica en determinar cuáles son las metodologías, competencias críticas y criterios educativos que deben estructurar la formación y el desempeño de los ingenieros de software, que garanticen la efectividad operativa del desarrollo.
+
+\subsection{Sistematización del problema}
+
+\begin{enumerate}
+    \item ¿Cuáles son las habilidades técnicas que adquieren mayor relevancia cuando la generación de código es impulsada principalmente por IA?
+    \item ¿Qué habilidades blandas resultan más importantes en los nuevos entornos de desarrollo impulsados por la IA?
+    \item Si el desarrollo se lleva a cabo con el uso de agentes de IA, ¿cuáles son las metodologías de trabajo y procesos ideales para optimizar?
+    \item ¿Cómo debería estructurarse la formación académica para los estudiantes y profesionales que empiezan su carrera con el auge de la IA?
+\end{enumerate}
+
+\subsection{Justificación}
+
+La rápida adopción de herramientas de IA generativa y agentes autónomos en el desarrollo de software está superando los saberes disciplinares tradicionales. Esta investigación se justifica en la necesidad de atender las prácticas emergentes (vibe coding) sin perder la rigurosidad formal de la Ingeniería de Software. Este estudio intenta averiguar las prácticas y habilidades relevantes están siendo adoptadas por los profesionales, y que merecen la atención de estudiantes e ingenieros con incertidumbre sobre cómo integrar la inteligencia artificial en su trabajo.
+
+\subsection{Objetivo}
+
+Analizar los conocimientos, tecnologías y criterios de formación académica que requieren los ingenieros de software ante la tendencia de integrar agentes autónomos de inteligencia artificial en el desarrollo de software.
+
+\subsubsection{Objetivos específicos}
+
+\begin{enumerate}
+    \item Identificar las habilidades técnicas y tecnologías que son relevantes para los ingenieros de software cuando la generación de código es impulsada principalmente por IA.
+    \item ¿En qué medida las habilidades blandas siguen siendo relevantes para los ingenieros de software en un contexto donde la codificación manual disminuye por el uso de IA?
+    \item Determinar las metodologías de trabajo y procesos que optimizan los recursos de un proyecto de desarrollo de software mediante la orquestación de agentes de IA.
+    \item Evaluar la posibilidad de adaptar la guía SWEBOK con las nuevas tendencias del uso de agentes de IA, proponiendo los contenidos esenciales que debería incluir.
+    \item Definir criterios que orienten la formación académica de estudiantes y profesionales en el estudio de la ingeniería de software frente al cambio de metodologías de trabajo con IA.
+\end{enumerate}
+
+
+\subsection{Delimitación}
+
+La investigación tomará en cuenta la revisión de artículos que contengan entrevistas a grupos de ingenieros y desarrolladores, así como opiniones y análisis de expertos investigadores en el tema. Dado que se trata de una situación en constante cambio, no es posible determinar a largo plazo qué prácticas, habilidades y metodologías serán relevantes de manera indefinida. La investigación se limita a considerar la perspectiva de expertos sobre lo que está ocurriendo actualmente, y sobre lo que puede afirmarse a corto plazo.
+
+
+% Referencias
+\newpage
+\printbibliography[title={Referencias}]
+
+\end{document}
