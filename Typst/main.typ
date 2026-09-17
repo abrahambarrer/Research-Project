@@ -199,7 +199,7 @@ constantes que se han dirigido desde un enfoque en el hardware hacia una visión
 usuario  @11645215. El software ya no es solamente un sistema de uso científico o ingenieril,
 sino que se ha convertido en un producto de uso cotidiano accesible para el público general.
 
-Por otro lado la historia de la inteligencia artificial como disciplina también ha tenido avances
+Por otro lado, la historia de la inteligencia artificial como disciplina también ha tenido avances
 cada vez más rápidos en los campos de deep learning y redes neuronales profundas. Pero fue en el
 año de 2024 cuando aumentaron las herramientas y tecnologías potenciadas por asistentes de codificación
 que el uso de inteligencia artificial en el desarrollo de software cobró relevancia. Los agentes de
@@ -210,14 +210,14 @@ referirse a la generación de código mediante lenguaje natural.
 
 Como ingeniería, siempre ha sido de interés el aumentar la eficiencia en el desarrollo de proyectos.
 Primariamente, las dinámicas en los equipos de trabajo, los procesos y metodologías como Scrum han
-agilizado los tiempos de los proyecto, pero el uso de inteligencia artificial ha mejorado considerablemente
-el ritmo de trbaajo. #cite(<11404330>, form: "prose") señalan que se han observado tiempos de desarrollo
+agilizado los tiempos de los proyectos, pero el uso de inteligencia artificial ha mejorado considerablemente
+el ritmo de trabajo. #cite(<11404330>, form: "prose") señalan que se han observado tiempos de desarrollo
 que se reducen de meses a semanas o días al examinar los resultados del vibe coding en proyectos reales.
-Los equipos de trabajo pueden dedicar más tiempo para la innovación, prototipos y lógica de negocio
+Los equipos de trabajo pueden dedicar más tiempo a la innovación, prototipos y lógica de negocio
 debido a la automatización de generación de código.
 
 Frente a esta situación, quienes ignoran el uso de la inteligencia artificial
-se encuentran posición de desventaja para hacer frente a las necesidades del
+se encuentran en posición de desventaja para hacer frente a las necesidades del
 desarrollo moderno, que exige tiempos y dinámicas más rápidas. Si el vibe coding
 resulta ahora indispensable para el desarrollo, entonces el problema es reconocer
 las nuevas prácticas, habilidades, procesos y metodologías que respondan
