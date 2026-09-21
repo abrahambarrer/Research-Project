@@ -261,6 +261,21 @@ de inteligencia artificial en el desarrollo de software.
 + Determinar las metodologías de trabajo y procesos que optimizan los recursos de un proyecto de desarrollo de software mediante la orquestación de agentes de IA.
 + Definir criterios que orienten la formación académica de estudiantes y profesionales en el estudio de la ingeniería de software frente al cambio de metodologías de trabajo con IA.
 
+== Hipótesis
+
+#lorem(100)
+
+= Justificación del problema
+
+La industria de software prioriza la optimización de recursos de tiempo, personal de trabajo, ingresos, etc. @alenezi2026riseainativesoftwareengineering.
+
+La investigación actual tiene como proposito determinar las tendencias actuales de construcción de software y se justifica debido a implicaciones relevantes para con las exigencias de la industria del desarrollo. Debido al cambio de paradigma de la forma de hacer ingeniería de software las funciones de los ingenieros se han replanteado y es pertinente identificar formalmente cuáles son estas nuevas prácticas, metodologías, y enfoques actuales. Asimismo, tiene importancia académica, ya que si los modos de desarrollo ha cambiado, entonces para cubrir estos conocimientos se requieren otras rutas de aprendizaje.
+
+La investigación se considera viable ya que se fundamenta en la revisión documental de literatura científica publicada entre 2020 y 2026 procedente de las bases de datos IEEE, ACM Digital Library y SpringerLink. 
+
+= Diseño de la investigación
+
+La investigación se presenta con objeto de análisis de las tendencias actuals de desarrollo de software y su adaptación para el aprendizaje. Por tal motivo, es una investigación cualitativa que se fundamenta en revisión de literatura científica para la comprensión de las prácticas de construcción modernas. Con el enfoque descriptivo, no hay manipulación de variables que deban estudiarse por un periodo longitudinal, por lo que se trata de una investigación de temporalidad transversal en cuanto a la recopilación de información se refiere.
 
 // Referencias
 #pagebreak()
