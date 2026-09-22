@@ -265,17 +265,42 @@ de inteligencia artificial en el desarrollo de software.
 
 #lorem(100)
 
-= Justificación del problema
+= Justificación del problema 
 
-La industria de software prioriza la optimización de recursos de tiempo, personal de trabajo, ingresos, etc. @alenezi2026riseainativesoftwareengineering.
+La industria de desarrollo de software actual demanda tiempos de entrega cada vez más rápidos y cortos
+plazos de tiempo, lo cual implica presión que generan ciertos conflictos que afectan el proyecto.
+#cite(<7961895>, form: "prose") indican que los problemas asociados con la presión en tiempos de entrega
+incluyen una mayor probabilidad de cometer errores, mayor número de defectos, trabajo posterior al despliegue,
+falta de coordinación en los equipos de trabajo, etc.
 
-La investigación actual tiene como proposito determinar las tendencias actuales de construcción de software y se justifica debido a implicaciones relevantes para con las exigencias de la industria del desarrollo. Debido al cambio de paradigma de la forma de hacer ingeniería de software las funciones de los ingenieros se han replanteado y es pertinente identificar formalmente cuáles son estas nuevas prácticas, metodologías, y enfoques actuales. Asimismo, tiene importancia académica, ya que si los modos de desarrollo ha cambiado, entonces para cubrir estos conocimientos se requieren otras rutas de aprendizaje.
+En el panorama actual, la construcción de software utilizando IA generativa ha significado una
+contribución importante para acelerar los proyectos y mejorar los tiempos de entrega. 
+Evaluaciones realizadas por #cite(<11438791>, form: "prose"), tras analizar 50 proyectos de software,
+se encontró que un framework impulsado por IA generativa logró la reducción de 50.6% en el tiempo de
+desarrollo en todo el ciclo de vida del software.
 
-La investigación se considera viable ya que se fundamenta en la revisión documental de literatura científica publicada entre 2020 y 2026 procedente de las bases de datos IEEE, ACM Digital Library y SpringerLink. 
+La investigación actual tiene como proposito determinar las tendencias actuales de construcción de
+software y se justifica debido a implicaciones relevantes para con las exigencias de la industria del
+desarrollo. Debido al cambio de paradigma de la forma de hacer ingeniería de software las funciones de
+los ingenieros se han replanteado y es pertinente identificar formalmente cuáles son estas nuevas prácticas,
+metodologías, y enfoques actuales. Asimismo, tiene importancia académica, ya que si los modos de desarrollo
+ha cambiado, entonces para cubrir estos conocimientos se requieren otras rutas de aprendizaje.
+
+La investigación se considera viable ya que se fundamenta en la revisión documental de literatura científica
+publicada entre 2020 y 2026 procedente de las bases de datos IEEE, ACM Digital Library y SpringerLink. 
 
 = Diseño de la investigación
 
 La investigación se presenta con objeto de análisis de las tendencias actuals de desarrollo de software y su adaptación para el aprendizaje. Por tal motivo, es una investigación cualitativa que se fundamenta en revisión de literatura científica para la comprensión de las prácticas de construcción modernas. Con el enfoque descriptivo, no hay manipulación de variables que deban estudiarse por un periodo longitudinal, por lo que se trata de una investigación de temporalidad transversal en cuanto a la recopilación de información se refiere.
+
+/* 
+
+("vibe coding" OR "AI-assisted coding" OR "LLM development" OR "GitHub Copilot" OR "generative AI") AND ("productivity" OR "efficiency" OR "time-to-market" OR "resource allocation") AND ("software development" OR "software engineering") AND ("data" OR "empirical" OR "metrics")
+
+("software development" OR "software industry" OR "software engineering") AND ("time pressure" OR "development time" OR "schedule pressure" OR "time constraints" OR "delivery deadlines")
+
+
+ */
 
 // Referencias
 #pagebreak()
