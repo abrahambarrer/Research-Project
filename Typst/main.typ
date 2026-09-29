@@ -196,7 +196,7 @@ el refinamiento sucesivo, divide y vencerás, y, a favor de hacer software para 
 la integración de los resultados de investigación científica en software interdisciplinar (Internet
 de las Cosas, algoritmos genéticos, etc.). Es así como la Ingeniería de Software ha tenido cambios
 constantes que se han dirigido desde un enfoque en el hardware hacia una visión centrada en el
-usuario  @11645215. El software ya no es solamente un sistema de uso científico o ingenieril,
+usuario. El software ya no es solamente un sistema de uso científico o ingenieril,
 sino que se ha convertido en un producto de uso cotidiano accesible para el público general.
 
 Por otro lado, la historia de la inteligencia artificial como disciplina también ha tenido avances
@@ -233,7 +233,27 @@ desempeño de los ingenieros de software, que garanticen la efectividad operativ
 
 = Revisión teórica
 
-#lorem(100)
+#set enum(numbering: "1.1.", full: true)
+
+1. Competencias técnicas actuales que exige la industria del software.
+  1. Herramientas de desarrollo de IA: GitHub Copilot y otros agentes.
+  2. Generación de arquitectura de software con el uso de inteligencia artificial.
+  3. Prácticas de desarrollo de software seguro con inteligencia artificial
+2. Habilidades blandas en el desarrollo de software.
+  1. Ingeniería de prompts para la claridad en el desarrollo
+  2. Colaboración en el desarrollo de software con IA
+  3. Desarrollo del pensamiento crítico con asistentes de desarrollo
+  4. Empatía con stakeholders en las decisiones de desarrollo de software
+3. Metodologías modernas de desarrollo con inteligencia artificial.
+  1. Metodologías ágiles potenciadas con agentes de IA.
+  2. Ingeniería de requisitos dirigida por IA.
+  3. Pruebas de Software dirigidas por IA.
+  4. Cambios en los roles de trabajo en el ciclo de vida de software.
+  5. AIOps para las operaciones de construcción de software
+4. Marco actual de la educación de Ingeniería de Software.
+  1. Currículums para el aprendizaje de desarrollo de software dirigido por IA
+  2. Aprendizaje del pensamiento computacional con IA.
+  3. Enseñanza del ciclo de vida del software con IA
 
 = Antecedentes de investigación y del contexto
 
@@ -276,7 +296,7 @@ falta de coordinación en los equipos de trabajo, etc.
 En el panorama actual, la construcción de software utilizando IA generativa ha significado una
 contribución importante para acelerar los proyectos y mejorar los tiempos de entrega. 
 Evaluaciones realizadas por #cite(<11438791>, form: "prose"), tras analizar 50 proyectos de software,
-se encontró que un framework impulsado por IA generativa logró la reducción de 50.6% en el tiempo de
+encontraron que un framework impulsado por IA generativa logró la reducción de 50.6% en el tiempo de
 desarrollo en todo el ciclo de vida del software.
 
 La investigación actual tiene como proposito determinar las tendencias actuales de construcción de
@@ -286,13 +306,14 @@ los ingenieros se han replanteado y es pertinente identificar formalmente cuále
 metodologías, y enfoques actuales. Asimismo, tiene importancia académica, ya que si los modos de desarrollo
 ha cambiado, entonces para cubrir estos conocimientos se requieren otras rutas de aprendizaje.
 
-La investigación se considera viable ya que se fundamenta en la revisión documental de literatura científica
+Esta investigación se considera viable ya que se fundamenta en la revisión documental de literatura científica
 publicada entre 2020 y 2026 procedente de las bases de datos IEEE, ACM Digital Library y SpringerLink. 
 
 = Diseño de la investigación
 
-La investigación se presenta con objeto de análisis de las tendencias actuals de desarrollo de software y su adaptación para el aprendizaje. Por tal motivo, es una investigación cualitativa que se fundamenta en revisión de literatura científica para la comprensión de las prácticas de construcción modernas. Con el enfoque descriptivo, no hay manipulación de variables que deban estudiarse por un periodo longitudinal, por lo que se trata de una investigación de temporalidad transversal en cuanto a la recopilación de información se refiere.
+Para establecer la estrategia del trabajo, se toman en cuenta las contribuciones a la metodología de investigación de #cite(<sampieri2014metodología>, form: "prose").
 
+El estudio tiene un enfoque descriptivo cuyo objeto de estudio son las tendencias actuales de desarrollo de software y su adaptación para el aprendizaje. Por tal motivo, es una investigación cualitativa y no experimental ya que se fundamenta en la revisión de literatura científica para la comprensión de las prácticas de construcción de software modernas. Debido al enfoque descriptivo, no hay manipulación de variables que deban estudiarse por un periodo longitudinal. En tal caso, se trata de una investigación de temporalidad transversal con respecto a la recopilación de información científica.
 /* 
 
 ("vibe coding" OR "AI-assisted coding" OR "LLM development" OR "GitHub Copilot" OR "generative AI") AND ("productivity" OR "efficiency" OR "time-to-market" OR "resource allocation") AND ("software development" OR "software engineering") AND ("data" OR "empirical" OR "metrics")
