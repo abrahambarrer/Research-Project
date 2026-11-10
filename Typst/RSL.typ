@@ -116,6 +116,13 @@
 
   pagebreak()
 
+// --- ÍNDICE DE FIGURAS ---
+
+  outline(
+  title: [Índice de Tablas y Figuras],
+  target: figure,
+)
+
   // --- CONFIGURACIÓN DEL CONTENIDO PRINCIPAL ---
   // A partir de aquí encendemos el encabezado.
   set page(
@@ -205,10 +212,10 @@ desempeño de los ingenieros de software, que garanticen la efectividad operativ
 
 #set enum(numbering: "1.1.", full: true)
 
-=== *Objetivo General:* 
+=== Objetivo General:
 Analizar los conocimientos, tecnologías, competencias y criterios de formación académica que requieren los ingenieros de software ante la tendencia de integrar inteligencia artificial en el desarrollo de proyectos software.
 
-=== *Objetivos Específicos:*
+=== Objetivos Específicos:
 
 1. Identificar las prácticas actuales de diseño de arquitectura y desarrollo de sistemas de los ingenieros de software potenciadas con el uso de IA.
 2. Examinar la comunicación, pensamiento crítico y trabajo colaborativo de los ingenieros de software en un contexto de trabajo asistido por IA.
@@ -416,17 +423,73 @@ Esta investigación se considera viable ya que se fundamenta en la revisión doc
   caption: [Preguntas para la evaluación de calidad],
 ) <evaluacion-calidad>
 
+Para la evaluación de la calidad de las fuentes se tomaron en cuenta los criterios de Kitchenham. Se hizo especial énfasis en las preguntas de calidad 3,4 y 5 sobre la recopilación de datos. Aquellas fuentes que tenían una puntuación menor a 2 eran fuentes de índole secundaria o propuestas teóricas sin datos empíricos.
+
+#show figure.where(kind: table): set block(breakable: true)
+
+#figure(
+  table(
+    columns: (auto, 1fr, ..range(12).map(_ => auto), auto),
+    align: (center + horizon, left + horizon, ..range(13).map(_ => center + horizon)),
+    stroke: 0.5pt,
+    
+    // Encabezados repetibles en cada página
+    table.header(
+      [*ID*], [*Título del Artículo*], [*Q1*], [*Q2*], [*Q3*], [*Q4*], [*Q5*], [*Q6*], [*Q7*], [*Q8*], [*Q9*], [*Q10*], [*Q11*], [*Q12*], [*P*]
+    ),
+
+    // Filas de datos
+    [1], [A-SAW: The Agentic Software Architecture Workflow], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [12.0],
+    [2], [A Comprehensive Framework for Intelligent, Scalable, and Performance-Optimized Software Development], [Y], [Y], [P], [P], [N], [N], [P], [P], [Y], [N], [N], [N], [4.5],
+    [3], [A Framework for Evaluating GenAI Adoption and Use in Software Engineering], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [12.0],
+    [4], [Agentic AI in the Software Development Lifecycle: Architecture, Empirical Evidence, and the Reshaping of Software Engineering], [Y], [Y], [N], [N], [N], [P], [Y], [N], [Y], [N], [P], [Y], [6.0],
+    [5], [Are We All Using Agents the Same Way An Empirical Study of Core and Peripheral Developers Use of Coding Agents], [], [], [], [], [], [], [], [], [], [], [], [], [],
+    [6], [Better Together: An LLM-Assisted Approach to Designing Software Architectures Using Attribute-Driven Design], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [12.0],
+    [7], [CICAP: A Human-AI Co-creation Paradigm for Ethical and Efficient Plugin Development in Moodle], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [N], [Y], [11.0],
+    [8], [Code with Me or for Me? How Increasing AI Automation Transforms Developer Workflows], [], [], [], [], [], [], [], [], [], [], [], [], [],
+    [9], [Command Coding: A Methodological Framework for AI-Accelerated Software Development], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [12.0],
+    [10], [Copiloting the future: How generative AI transforms Software Engineering], [Y], [Y], [Y], [P], [Y], [Y], [Y], [Y], [Y], [P], [Y], [Y], [11.0],
+    [11], [Empowering Agile-Based Generative Software Development through Human-AI Teamwork], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [N], [Y], [N], [Y], [Y], [10.0],
+    [12], [From Human-to-Human to Human-to-Bot Conversations in Software Engineering], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [N], [N], [Y], [Y], [10.0],
+    [13], [From Prompting to Verification: How Experience Shapes Vibe Coding Practices], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [12.0],
+    [14], [From Disruptions to Discussions: How GenAI Impacts Human Interactions in Software Development], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [12.0],
+    [15], [Generative AI for software architecture. Applications, challenges, and future directions], [Y], [Y], [P], [P], [P], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [10.5],
+    [16], [Generative AI in Software Development: Challenges, Opportunities, and New Paradigms for Quality Assurance], [Y], [P], [P], [Y], [P], [Y], [Y], [N], [Y], [N], [P], [Y], [8.0],
+    [17], [How Do Developers Interact with AI? An Exploratory Study on Modeling Developer Programming Behavior], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [12.0],
+    [18], [LLMs' reshaping of people, processes, products, and society in software development: a qualitative exploration with early adopters], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [12.0],
+    [19], [One Developer Is All You Need: A Case Study of an AI-Augmented One-Person Squad in a Brownfield Enterprise], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [12.0],
+    [20], [Reframing Software Architecture and Design Skills in the Era of Generative Artificial Intelligence], [Y], [N], [N], [N], [N], [N], [N], [N], [N], [N], [N], [N], [1.0],
+    [21], [Rethinking Software Engineering for Agentic AI Systems], [Y], [Y], [P], [N], [P], [Y], [Y], [P], [Y], [Y], [Y], [Y], [9.5],
+    [22], [SDAD: Spec-Driven Agentic Development for the AI-Native SDLC], [Y], [Y], [P], [P], [N], [N], [Y], [P], [Y], [Y], [Y], [Y], [8.5],
+    [23], [Software Engineering by and for Humans in an AI Era], [Y], [Y], [Y], [N], [N], [N], [Y], [N], [Y], [N], [Y], [Y], [7.0],
+    [24], [The Impact of Modern AI on Software Development: A Systematic Literature Review], [Y], [Y], [P], [P], [P], [Y], [Y], [P], [Y], [N], [Y], [Y], [9.0],
+    [25], [The role of LLMs in Collaborative Software Design], [], [], [], [], [], [], [], [], [], [], [], [], [],
+    [26], [The Role of Software Engineering Knowledge in Shaping Effective AI-Driven Development], [], [], [], [], [], [], [], [], [], [], [], [], [],
+    [27], [Using LLMs in Software Design: An Empirical Study of GitHub and A Practitioner Survey], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [12.0],
+    [28], [Vibe Coding as a Reconfiguration of Intent Mediation in Software Development: Definition, Implications, and Research Agenda], [Y], [Y], [P], [N], [N], [P], [P], [N], [Y], [P], [Y], [Y], [6.0],
+    [29], [What Will Remain Human in Software Architecture? A Focus Group Report], [Y], [Y], [Y], [N], [Y], [Y], [Y], [N], [Y], [Y], [Y], [Y], [10.0],
+    [30], [When Clean Code Becomes Costly: Balancing Human Readability and AI Digestibility with the NUDEE Framework], [Y], [Y], [N], [N], [N], [Y], [Y], [P], [Y], [Y], [Y], [Y], [8.5],
+  ),
+  caption: [Evaluación de la calidad QA],
+)
+
 == Análisis de datos
+
+Los resultados posteriores al proceso de búsqueda con criterios de inclusión y exclusión y evaluación de la calidad se obtuvieron los siguientes resultados. En la @grafica-1 se observa el número de artículos obtenidos entre los años 2024 y 2026, distinguiendo cada base de datos por color. Aunque de acuerdo al criterio de inclusión 1 la búsqueda incluía artículos entre 2020 y 2026 se encontraron relevantes fuentes en los últimos 3 años. En el año 2026 fueron publicados más artículos relevantes, lo cual indica que los estudios relacionados con marcos de trabajo con integración de inteligencia artificial son cada vez más relevantes.
 
 #figure(
   image("../images/Figura1.png", width: 5.5in),
   caption: [Número de artículos por año]
 ) <grafica-1>
 
+En la @grafica-2 se observa la proporción de artículos según el tipo de investigación por tipo de datos empleados. La mayoría de estudios fueron de tipo mixto y el resto fueron investigaciones cualitativas. Esto significa que las investigaciones cualitativas no se realizaron de manera empírica sino con un enfoque exploratorio en estudios previos.
+
 #figure(
   image("../images/Figura2.png", width: 5.5in),
   caption: [Tipos de investigación en fuentes primarias]
 ) <grafica-2>
+
+En la @grafica-3 se muestra la proporción de artículos que presentan una propuesta de marco de trabajo, flujo o proceso para la ingeniería de software con IA. La mayoría de estudios se mantienen en la línea de evaluación, estudio de caso o revisión de literatura. El menor porcentaje corresponde a artículos que presentan una propuesta y la evalúan empíricamente.
 
 #figure(
   image("../images/Figura3.png", width: 5.5in),
