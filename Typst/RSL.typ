@@ -500,70 +500,170 @@ En la @grafica-3 se muestra la proporción de artículos que presentan una propu
 
 *Si el desarrollo se lleva a cabo con el uso de agentes de IA, ¿cuáles son las metodologías de trabajo y procesos que resultan más efectivos para optimizar el desarrollo?*
 
-#cite(label("10.1145/3832783.3834536"), form: "prose") evalúan una metodología propuesta denominada Command Coding que requiere habilidades nivel senior en arquitectura. La metodología fue evaluada en el desarrollo de la librería all2md; el proyecto fue completado en 41 días de trabajo y se estima que acelerar el trabajo entre 25 y 40 veces el ritmo de trabajo en comparación con el desarrollo tradicional sin pérdida de la calidad. Esto se logra mediante sprints pequeños diarios que desarrollan de 3 a 5 elementos de trabajo.
+#show figure.where(kind: table): set block(breakable: true)
 
-Por otra parte, #cite(<article>, form: "prose") evaluaron una metodología enfocada en la interacción humano-IA denominada Collaborative Iterative Co-Authoring Process (CICAP). Se evaluó este marco de trabajo en el desarrollo de un plugin para la plataforma Moodle y se observó una reducción del 60% del tiempo total estimado del proyecto. El flujo de trabajo consta de 6 etapas que incluye la documentación final de los prompts y su respuesta para la reproducibilidad y aprendizajes en proyectos futuros.
+#figure(
+  table(
+    columns: (auto, 1fr),
+    align: (top + left, top + left),
+    stroke: 0.5pt,
 
-También la metodología Specification-Driven Development (SDD) es señalada por #cite(<boas2026developerneedcasestudy>, form: "prose") como un paradigma emergente en el desarrollo asistido por IA. Esta metodología se fundamenta en el desarrollo dirigido por pruebas y el objetivo principal es generar especificaciones que un agente de IA pueda implementar sin ambigüedad. En este caso, los autores evalúan el desarrollo de una plataforma de firma digital para un banco en el que un solo desarrollador configura los roles de varios agentes (Product Manager, Specification y Developers).
+    // Encabezado que se repite en cada página si la tabla se extiende
+    table.header(
+      [*Autor*], [*Respuesta*]
+    ),
+
+    // Filas de datos
+    [#cite(label("10.1145/3832783.3834536"), form: "prose")], [Evalúan una metodología propuesta denominada Command Coding que requiere habilidades nivel senior en arquitectura. La metodología fue evaluada en el desarrollo de la librería all2md; el proyecto fue completado en 41 días de trabajo y se estima que acelerar el trabajo entre 25 y 40 veces el ritmo de trabajo en comparación con el desarrollo tradicional sin pérdida de la calidad. Esto se logra mediante sprints pequeños diarios que desarrollan de 3 a 5 elementos de trabajo.],
+
+    [#cite(<article>, form: "prose")], [Evaluaron una metodología enfocada en la interacción humano-IA denominada Collaborative Iterative Co-Authoring Process (CICAP). Se evaluó este marco de trabajo en el desarrollo de un plugin para la plataforma Moodle y se observó una reducción del 60% del tiempo total estimado del proyecto. El flujo de trabajo consta de 6 etapas que incluye la documentación final de los prompts y su respuesta para la reproducibilidad y aprendizajes en proyectos futuros.],
+
+    [#cite(<boas2026developerneedcasestudy>, form: "prose")], [Presentan la metodología Specification-Driven Development (SDD) como un paradigma emergente en el desarrollo asistido por IA. Esta metodología se fundamenta en el desarrollo dirigido por pruebas y el objetivo principal es generar especificaciones que un agente de IA pueda implementar sin ambigüedad. En este caso, los autores evalúan el desarrollo de una plataforma de firma digital para un banco en el que un solo desarrollador configura los roles de varios agentes (Product Manager, Specification y Developers).],
+  ),
+  caption: [Metodologías de trabajo de desarrollo asistido por IA],
+) <tabla-pregunta-1>
 
 *¿Cuáles son las prácticas de los ingenieros de software en el diseño arquitectónico de sistemas cuando el proceso de desarrollo es dirigido por IA?*
 
-En la revisión realizada por #cite(<wang2026usingllmssoftwaredesign>, form: "prose"), con base en una encuesta, se ha observado que los LLMs se han utilizado para actividades de diseño de alto nivel, descomposición modular, estructura organizacional, pros y contras, así como patrones de interacción y coordinación. #cite(label("10.1145/3803291.3803317"), form: "prose") indica que los ingenieros deben guiar a la IA para definir esquemas de datos y estructurar arquitecturas multicapa, de otra manera la IA genera componentes aislados que difícilmente pueden integrarse, esquemas con falta de coherencia y mecanismo de seguridad deficientes.
+#show figure.where(kind: table): set block(breakable: true)
 
-#cite(<vanheesch2026remainhumansoftwarearchitecture>, form: "prose") resalta la importancia que tiene la especificación previo a la implementación por parte de agentes de IA, puesto que la calidad de la salida es directamente proporcional a la precisión de la entrada especificada. Así lo han reportado participantes en encuestas. También señala que algunos usuarios prefieren implementar algunas características de manera independiente para que el agente aprenda de manera más rápida el estilo del código.
+#figure(
+  table(
+    columns: (auto, 1fr),
+    align: (top + left, top + left),
+    stroke: 0.5pt,
 
-Por su parte, #cite(<11575292>, form: "prose") describe las siguientes prácticas:
+    // Encabezado que se repite si la tabla se extiende a otra página
+    table.header(
+      [*Autor*], [*Respuesta*]
+    ),
 
-- *Método de Attribute Driven Design:* utiliza el método de arquitectura Architecture-Driven Design (ADD), esto es descomponer el diseño arquitectónico en pasos secuenciales para generar artefactos intermedios en el proceso.
-- *Definición de rol:* configurar el perfil del LLM como arquitecto sénior que justifica cada propuesta por atributo de calidad, así como la evaluación de ventajas y desventajas.
-- *Architectural drivers:* proporcionar los drivers arquitectónicos como entradas al LLM que incluyen requisitos funcionales primarios, escenarios de atributos de calidad, restricciones y decisiones arquitectónicas. Estos artefactos deben ser prioritarios.
+    // Filas de datos
+    [#cite(<wang2026usingllmssoftwaredesign>, form: "prose")], [Con base en una encuesta, se ha observado que los LLMs se han utilizado para actividades de diseño de alto nivel, descomposición modular, estructura organizacional, pros y contras, así como patrones de interacción y coordinación.],
 
-#cite(<klatt2026asawagenticsoftwarearchitecture>, form: "prose") propone Agentic-Software Architecture Workflow (A-SAW) como un flujo de trabajo de tres capas (Artifact, Agent Orchestration, Human Review) para crear artefactos de arquitectura y reducir el esfuerzo de mantenerlos actualizados en las iteraciones del ciclo de vida del software.
+    [#cite(label("10.1145/3803291.3803317"), form: "prose")], [Indica que los ingenieros deben guiar a la IA para definir esquemas de datos y estructurar arquitecturas multicapa, de otra manera la IA genera componentes aislados que difícilmente pueden integrarse, esquemas con falta de coherencia y mecanismo de seguridad deficientes.],
+
+    [#cite(<vanheesch2026remainhumansoftwarearchitecture>, form: "prose")], [Resalta la importancia que tiene la especificación previo a la implementación por parte de agentes de IA, puesto que la calidad de la salida es directamente proporcional a la precisión de la entrada especificada. Así lo han reportado participantes en encuestas. También señala que algunos usuarios prefieren implementar algunas características de manera independiente para que el agente aprenda de manera más rápida el estilo del código.],
+
+    [#cite(<11575292>, form: "prose")], [
+      Método de Attribute Driven Design: utiliza el método de arquitectura Architecture-Driven Design (ADD), esto es descomponer el diseño arquitectónico en pasos secuenciales para generar artefactos intermedios en el proceso.
+
+      Definición de rol: configurar el perfil del LLM como arquitecto sénior que justifica cada propuesta por atributo de calidad, así como la evaluación de ventajas y desventajas.
+
+      Architectural drivers: proporcionar los drivers arquitectónicos como entradas al LLM que incluyen requisitos funcionales primarios, escenarios de atributos de calidad, restricciones y decisiones arquitectónicas. Estos artefactos deben ser prioritarios.
+    ],
+
+    [#cite(<klatt2026asawagenticsoftwarearchitecture>, form: "prose")], [Propone Agentic-Software Architecture Workflow (A-SAW) como un flujo de trabajo de tres capas (Artifact, Agent Orchestration, Human Review) para crear artefactos de arquitectura y reducir el esfuerzo de mantenerlos actualizados en las iteraciones del ciclo de vida del software.],
+  ),
+  caption: [Prácticas de diseño arquitectónico asistido por IA],
+) <tabla-pregunta-2>
 
 *¿Cómo se estructuran las etapas del ciclo de vida de software con la integración de IA?*
 
-#cite(<Tabarsi_2026>, form: "prose") declara que los LLMs influyen en 5 fases del ciclo de vida del software. Se percibe que:
+#show figure.where(kind: table): set block(breakable: true)
 
-- *Requisitos:* menor adopción de IA.
-- *Diseño:* uso de LLMs para la descomposición del problema.
-- *Implementación:* uso de estrategias de prompts sofisticadas.
-- *Pruebas y revisión de código:* pruebas unitarias con limitaciones.
-- *Debugging, refactorización y documentación:* el uso de LLMs reduce el tiempo de debugging.
+#figure(
+  table(
+    columns: (auto, 1fr),
+    align: (top + left, top + left),
+    stroke: 0.5pt,
 
-Para #cite(<11052848>, form: "prose") el ciclo de vida se puede estructurar en 4 fases integradas: la planificación y diseño que incluye la recolección de requisitos, arquitectura  y prototipado; la implementación que abarca autocodificación, depuración y control de precisión; las pruebas generadas con IA y el despliegue y optimización que incluye la configuración de pipelines CI/CD, monitoreo e ingeniería financiar para gestionar costos computacionales.
+    // Encabezado que se repite si la tabla se extiende a otra página
+    table.header(
+      [*Autor*], [*Respuesta*]
+    ),
 
-Para #cite(<11499432>, form: "prose"), el proceso de software se extiende previo a los requisitos de un proyecto. En este caso, la Ideación comienza desde la adopción de una IA generativa: identificar las ideas de negocio, inquirir en modelos de IA, probar prompts de prueba y la selección de modelos. Las siguientes etapas del ciclo de vida corresponden al desarrollo, y son bastante apegadas al modelo tradicional: requisitos, desarrollo, pruebas y validación. El último gran apartado es la Operación: despliegue, monitoreo, evaluar tiempo de ejecución y mejora de la aplicación. Siempre es posible volver entre cada gran apartado, por ejemplo para cambiar de modelo de IA o para ampliar el desarrollo.
+    // Filas de datos
+    [#cite(<Tabarsi_2026>, form: "prose")], [
+      Declara que los LLMs influyen en 5 fases del ciclo de vida del software. Se percibe que:
+      
+      - *Requisitos:* menor adopción de IA.
+      - *Diseño:* uso de LLMs para la descomposición del problema.
+      - *Implementación:* uso de estrategias de prompts sofisticadas.
+      - *Pruebas y revisión de código:* pruebas unitarias con limitaciones.
+      - *Debugging, refactorización y documentación:* el uso de LLMs reduce el tiempo de debugging.
+    ],
+
+    [#cite(<11052848>, form: "prose")], [El ciclo de vida se puede estructurar en 4 fases integradas: la planificación y diseño que incluye la recolección de requisitos, arquitectura y prototipado; la implementación que abarca autocodificación, depuración y control de precisión; las pruebas generadas con IA y el despliegue y optimización que incluye la configuración de pipelines CI/CD, monitoreo e ingeniería financiar para gestionar costos computacionales.],
+
+    [#cite(<11499432>, form: "prose")], [El proceso de software se extiende previo a los requisitos de un proyecto. En este caso, la Ideación comienza desde la adopción de una IA generativa: identificar las ideas de negocio, inquirir en modelos de IA, probar prompts de prueba y la selección de modelos. Las siguientes etapas del ciclo de vida corresponden al desarrollo, y son bastante apegadas al modelo tradicional: requisitos, desarrollo, pruebas y validación. El último gran apartado es la Operación: despliegue, monitoreo, evaluar tiempo de ejecución y mejora de la aplicación. Siempre es posible volver entre cada gran apartado, por ejemplo para cambiar de modelo de IA o para ampliar el desarrollo.],
+  ),
+  caption: [Etapas del ciclo de vida del software integrando IA],
+) <tabla-pregunta-3>
 
 *¿De qué manera la integración de la IA generativa redefine la comunicación técnica, el pensamiento crítico y las dinámicas de colaboración en los equipos de desarrollo de software?*
 
-#cite(<boas2026developerneedcasestudy>, form: "prose") sugiere que la inteligencia artificial maximiza la tendencia de reducción de equipos de trabajo que requieren mayor coordinación, pero que disminuye la especialización que ocupa cada miembro. Mediante el uso de agentes de IA, un ingeniero puede trabajar sin sufrir la carga cognitiva de un equipo de trabajo y con los beneficios de las capacidades de un equipo de trabajo, asignando un rol a múltiples agentes de IA.
+#show figure.where(kind: table): set block(breakable: true)
 
-En este caso, se estructuran tres roles durante el ciclo de vida:
+#figure(
+  table(
+    columns: (auto, 1fr),
+    align: (top + left, top + left),
+    stroke: 0.5pt,
 
-- *Product manager:* agente configurado con conocimiento del dominio del problema.
-- *Agente de especificaciones:* con acceso a repositorios, microservicios, componentes, etc.
-- *Desarrolladores:* divididos entre módulos críticos, como reglas de negocio y  casos de uso, y módulos no críticos como integración de APIs, configuración de cola de mensajes y código boilerplate.
+    // Encabezado que se repite automáticamente si la tabla pasa a otra página
+    table.header(
+      [*Autor*], [*Respuesta*]
+    ),
 
-Según #cite(label("10.1145/3808120"), form: "prose"), algunos desarrolladores aumentan su escepticismo con el uso de código generado por IA. Prefieren utilizar sólo porciones de código y escribir el resto manualmente porque es más fácil la verificación posterior.
+    // Filas de datos
+    [#cite(<boas2026developerneedcasestudy>, form: "prose")], [
+      Sugiere que la inteligencia artificial maximiza la tendencia de reducción de equipos de trabajo que requieren mayor coordinación, pero que disminuye la especialización que ocupa cada miembro. Mediante el uso de agentes de IA, un ingeniero puede trabajar sin sufrir la carga cognitiva de un equipo de trabajo y con los beneficios de las capacidades de un equipo de trabajo, asignando un rol a múltiples agentes de IA.
 
-Cuando se trata de la revisión de integraciones de código por medio de pull requests, #cite(<Cynthia_2026>, form: "prose") ha encontrado que los desarrolladores principales tienden a priorizar soluciones alternativas frente a los problemas relacionados con código generado mientras que los desarrolladores secundarios se enfocan en la organización del código.
+      En este caso, se estructuran tres roles durante el ciclo de vida:
 
-En el estudio realizado por #cite(<11363384>, form: "prose") los desarrolladores Sénior prefieren que los desarrolladores novatos utilicen IA para responder preguntas triviales o rutinarias, y reservar las preguntas que requieren discusión y múltiples puntos de vista bajo la guía humana. Ante esto, los novatos declaran que esta dinámica resulta cómoda cuando se trata de preguntas que les apena consultar con los superiores. En este sentido, es importante la habilidad de delegar preguntas a la IA generativa para mantener la concentración en las tareas inmediatas y el ritmo de trabajo. Como resultado, se reportó un 59% de mejoría en los tiempos de las actividades y además algunos desarrolladores dicen haber incrementado la confianza en las soluciones. #cite(<khojah2024humantohumanhumantobotconversationssoftware>, form: "prose") declara que la comunicación humano-humano asume un contexto explícito e implícito compartido por el equipo, mientras que las comunicación con LLMs requiere personalización para la comprensión del problema.
+      - *Product manager:* agente configurado con conocimiento del dominio del problema.
+      - *Agente de especificaciones:* con acceso a repositorios, microservicios, componentes, etc.
+      - *Desarrolladores:* divididos entre módulos críticos, como reglas de negocio y casos de uso, y módulos no críticos como integración de APIs, configuración de cola de mensajes y código boilerplate.
+    ],
 
-Al trabajar en parejas (pair-programming), #cite(label("10.1145/3803437.3806702"), form: "prose") encuentra tres patrones diferentes del uso de LLMs en las actividades. Los pares pueden elegir trabajar con un LLM compartido donde un desarrollador dirige y escribe los prompts y el segundo contribuye a construir y revisar la respuesta. La segunda forma de trabajo es utilizar dos instancias de LLM para una misma actividad; este enfoque permite explorar las capacidades no determinísticas de la IA pero puede causar problemas de desviación de contexto. Adicionalmente, los desarrolladores pueden separar las actividades en subactividades para cada quien trabajar en su propia instancia; este modo de trabajo requiere mayor coordinación para asegurar la coherencia.
+    [#cite(label("10.1145/3808120"), form: "prose")], [Aumenta el escepticismo de los desarrolladores con el uso de código generado por IA. Prefieren utilizar sólo porciones de código y escribir el resto manualmente porque es más fácil la verificación posterior.],
+
+    [#cite(<Cynthia_2026>, form: "prose")], [Cuando se trata de la revisión de integraciones de código por medio de pull requests, se ha encontrado que los desarrolladores principales tienden a priorizar soluciones alternativas frente a los problemas relacionados con código generado mientras que los desarrolladores secundarios se enfocan en la organización del código.],
+
+    [#cite(<11363384>, form: "prose")], [Los desarrolladores Sénior prefieren que los desarrolladores novatos utilicen IA para responder preguntas triviales o rutinarias, y reservar las preguntas que requieren discusión y múltiples puntos de vista bajo la guía humana. Ante esto, los novatos declaran que esta dinámica resulta cómoda cuando se trata de preguntas que les apena consultar con los superiores. En este sentido, es importante la habilidad de delegar preguntas a la IA generativa para mantener la concentración en las tareas inmediatas y el ritmo de trabajo. Como resultado, se reportó un 59% de mejoría en los tiempos de las actividades y además algunos desarrolladores dicen haber incrementado la confianza en las soluciones.],
+
+    [#cite(<khojah2024humantohumanhumantobotconversationssoftware>, form: "prose")], [Declara que la comunicación humano-humano asume un contexto explícito e implícito compartido por el equipo, mientras que las comunicación con LLMs requiere personalización para la comprensión del problema.],
+
+    [#cite(label("10.1145/3803437.3806702"), form: "prose")], [Al trabajar en parejas (pair-programming), se han encontrado tres patrones diferentes del uso de LLMs en las actividades. Los pares pueden elegir trabajar con un LLM compartido donde un desarrollador dirige y escribe los prompts y el segundo contribuye a construir y revisar la respuesta. La segunda forma de trabajo es utilizar dos instancias de LLM para una misma actividad; este enfoque permite explorar las capacidades no determinísticas de la IA pero puede causar problemas de desviación de contexto. Adicionalmente, los desarrolladores pueden separar las actividades en subactividades para cada quien trabajar en su propia instancia; este modo de trabajo requiere mayor coordinación para asegurar la coherencia.],
+  ),
+  caption: [Impacto de la IA en la comunicación, colaboración y roles de los equipos],
+) <tabla-pregunta-4>
 
 *¿Qué prácticas de validación y aseguramiento de la calidad emplean los ingenieros de software para mitigar los riesgos del código generado por agentes de IA?*
 
-En la metodología de Command Coding #cite(label("10.1145/3832783.3834536"), form: "prose") la revisión es continua y tiene tres escenarios:
+#show figure.where(kind: table): set block(breakable: true)
 
-- *Filtros automáticos de seguridad:* se ejecuta en cada commit el código, tipado, ejecución pruebas y escaneo de calidad.
-- *Revisión entre modelos:* cada 3-5 elementos de trabajo un modelo diferente del que genera el código revisa el código, vulnerabilidades, consistencia de patrones y que sea coherente con la arquitectura.
-- *Revisión humana:* la revisión de humanos se enfoca en elementos críticos de seguridad, decisiones en el diseño de APIs, alineación con la arquitectura y adecuación de pruebas.
+#figure(
+  table(
+    columns: (auto, 1fr),
+    align: (top + left, top + left),
+    stroke: 0.5pt,
 
-El uso de IA generativa también puede utilizarse para la escritura de pruebas unitarias específicas pero también para la verificación de código recién escrito para encontrar errores lógicos, vulnerabilidades o casos de refactorización, así lo menciona #cite(label("10.1016/j.infsof.2025.107751"), form: "prose"). #cite(label("10.1145/3702987"), form: "prose") menciona además que los desarrolladores suelen solicitar explicaciones de las modificaciones de múltiples archivos, examinar diferencias de código y solicitar revisiones ante la sobre-generación de archivos o fallos.
+    // Encabezado repetible en cada página
+    table.header(
+      [*Autor*], [*Respuesta*]
+    ),
 
-#cite(<fawzy2026promptingverificationexperienceshapes>, form: "prose") agrega que los desarrolladores experimentados suelen optar por la corrección manual antes que pedirle a la IA que corrija su propio código. Para las evaluaciones, #cite(label("10.1145/3702987"), form: "prose") propone casos de prueba técnicos basados en criterios de aceptación que utilizan lenguaje Gherkin.
+    // Filas de datos
+    [#cite(label("10.1145/3832783.3834536"), form: "prose")], [
+      En la metodología de Command Coding la revisión es continua y tiene tres escenarios:
 
+      - *Filtros automáticos de seguridad:* se ejecuta en cada commit el código, tipado, ejecución pruebas y escaneo de calidad.
+      - *Revisión entre modelos:* cada 3-5 elementos de trabajo un modelo diferente del que genera el código revisa el código, vulnerabilidades, consistencia de patrones y que sea coherente con la arquitectura.
+      - *Revisión humana:* la revisión de humanos se enfoca en elementos críticos de seguridad, decisiones en el diseño de APIs, alineación con la arquitectura y adecuación de pruebas.
+    ],
+
+    [#cite(label("10.1016/j.infsof.2025.107751"), form: "prose")], [El uso de IA generativa también puede utilizarse para la escritura de pruebas unitarias específicas pero también para la verificación de código recién escrito para encontrar errores lógicos, vulnerabilidades o casos de refactorización.],
+
+    [#cite(label("10.1145/3772318.3790850"), form: "prose")], [Menciona además que los desarrolladores suelen solicitar explicaciones de las modificaciones de múltiples archivos, examinar diferencias de código y solicitar revisiones ante la sobre-generación de archivos o fallos.],
+
+    [#cite(<fawzy2026promptingverificationexperienceshapes>, form: "prose")], [Agrega que los desarrolladores experimentados suelen optar por la corrección manual antes que pedirle a la IA que corrija su propio código.],
+
+    [#cite(label("10.1145/3702987"), form: "prose")], [Para las evaluaciones, propone casos de prueba técnicos basados en criterios de aceptación que utilizan lenguaje Gherkin.],
+  ),
+  caption: [Prácticas de validación y aseguramiento de la calidad del código generado por IA],
+) <tabla-pregunta-5>
 
 = Conclusiones
 
