@@ -245,153 +245,197 @@ Esta investigación se considera viable ya que se fundamenta en la revisión doc
 
 == Criterios de inclusión y exclusión
 
-=== Criterios de inclusión
+#show figure.where(kind: table): set block(breakable: true)
 
-+ Papers, capítulos de libros, y artículos de revistas publicados entre los años 2020 y 2026. (CI1)
-+ Papers escritos en inglés. (CI2)
-+ Papers con acceso completo. (CI3)
-+ Título y el abstract puedan dar respuesta al menos una pregunta de investigación. (CI4)
-+ Leyendo el contenido responde al menos una pregunta de investigación. (CI5)
+#figure(
+  table(
+    columns: (1fr, 1fr),
+    align: (top + left, top + left),
+    stroke: 0.5pt,
 
-=== Criterios de exclusión
+    // Encabezado repetible en cada página
+    table.header(
+      [*Criterios de inclusión*], [*Criterios de exclusión*]
+    ),
 
-+ En fuentes multidisciplinarias, el estudio no está en el área de Ingeniería o Computer Science. (CE1)
-+ La publicación es una presentación o reporte técnico. (CE2)
-+ Papers duplicados. (CE3)
-+ Después de leer los paper, no aborda ninguna pregunta de investigación. (CE4)
+    // Filas de datos
+    [CI1 Papers, capítulos de libros, y artículos de revistas publicados entre los años 2020 y 2026.], [CE1 En fuentes multidisciplinarias, el estudio no está en el área de Ingeniería o Computer Science.],
+
+    [CI2 Papers escritos en inglés.], [CE2 La publicación es una presentación o reporte técnico.],
+
+    [CI3 Papers con acceso completo.], [CE3 Papers duplicados.],
+
+    [CI4 Título y el abstract puedan dar respuesta al menos una pregunta de investigación.], [CE4 Después de leer los paper, no aborda ninguna pregunta de investigación.],
+
+    [CI5 Leyendo el contenido responde al menos una pregunta de investigación.], [],
+  ),
+  caption: [Criterios de inclusión y exclusión],
+) <criterios>
 
 == Proceso de búsqueda
 
+Para la etapa 1 se aplicaron los siguientes criterios inclusión y exclusión:
+- Papers, capítulos de libros, y artículos de revistas publicados entre los años 2020 y 2026. (CI1)
+- Papers escritos en inglés o español. (CI2)
+- Papers con acceso completo. (CI3)
+Para la etapa 2 se aplicaron los siguientes criterios de inclusión y exclusión:
+- Título y el abstract puedan dar respuesta al menos una pregunta de investigación. (CI4)
+- En fuentes multidisciplinarias, el estudio no está en el área de Ingeniería o Computer Science. (CE1)
+- La publicación es una presentación o reporte técnico (CE2)
+Para la etapa 3 se aplicaron los siguientes criterios de inclusión y exclusión:
+- Leyendo el contenido responde al menos una pregunta de investigación. (CI5)
+- Papers duplicados. (CE3)
+- Después de leer los paper, no aborda ninguna pregunta de investigación. (CE4)
+
+
+#show figure.where(kind: table): set block(breakable: true)
 
 #figure(
   table(
-    // 5 columnas: la primera más ancha (auto), las demás del mismo tamaño (1fr)
-    columns: (auto, 1fr, 1fr, 1fr, 1fr),
-    // Centrar el contenido vertical y horizontalmente
-    align: (col, row) => if col == 0 { horizon + left } else { horizon + center },
-    
-    // Encabezados
-    [], [Search], [Stage 1], [Stage 2], [Stage 3],
+    columns: (auto, 1fr, auto, auto, auto, auto),
+    align: (top + left, top + left, top + center, top + center, top + center, top + center),
+    stroke: 0.5pt,
 
-    // Fila 1
-    [IEEE], [2118], [169], [12], [2],
+    // Encabezado repetible en cada página
+    table.header(
+      [*Fuente*], [*Cadena de búsqueda*], [*Resultado*], [*Etapa 1*], [*Etapa 2*], [*Etapa 3*]
+    ),
 
-    // Fila 2
-    [ACM Digital\ Library], [231], [220], [12], [1],
+    // Filas de datos
+    [IEEE], [("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND ("software architecture" OR "architectural design" OR "software design" OR "system design" OR "code generation")], [3829], [531], [9], [2],
 
-    // Fila 3
-    [Scopus], [3829], [531], [9], [2],
+    [ACM Digital Library], [Abstract:("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND Abstract:("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND Abstract:("software architecture" OR "architectural design" OR "software design" OR "system design" OR "code generation")], [231], [220], [12], [1],
 
-    // Fila 4
-    [ArXiv], [1607], [1559], [22], [2],
+    [Scopus], [TITLE-ABS-KEY(("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND ("software architecture" OR "architectural design" OR "software design" OR "system design" OR "code generation"))], [2118], [169], [12], [2],
 
-    // Fila 5
-    [Science Direct], [633], [234], [9], [0],
+    [ArXiv], [cat:cs.SE AND (abs:"software architecture" OR abs:"architectural design" OR abs:"software design" OR abs:"system design") AND (abs:"large language model" OR abs:"LLM" OR abs:"generative AI" OR abs:"AI agent" OR abs:"agentic" OR abs:"vibe coding" OR abs:"AI-assisted")], [1607], [1559], [22], [2],
 
-    // Fila 6 (Total)
-    [Total], [8418], [2713], [64], [*7*],
+    [Science Direct], [("software engineering" OR "software development") AND ("generative AI" OR "large language model" OR "AI agent" OR "vibe coding") AND ("software architecture" OR "software design")], [633], [234], [9], [0],
+
+    // Fila Total
+    [Total], [], [8418], [2713], [64], [*7*],
   ),
-  caption: [Resultados de la cadena de búsqueda 1]
+  caption: [Resultados de la búsqueda 1],
 ) <busqueda-1>
 
+#show figure.where(kind: table): set block(breakable: true)
+
 #figure(
   table(
-    // 5 columnas: la primera más ancha (auto), las demás del mismo tamaño (1fr)
-    columns: (auto, 1fr, 1fr, 1fr, 1fr),
-    // Centrar el contenido vertical y horizontalmente
-    align: (col, row) => if col == 0 { horizon + left } else { horizon + center },
-    
-    // Encabezados
-    [], [Search], [Stage 1], [Stage 2], [Stage 3],
+    columns: (auto, 1fr, auto, auto, auto, auto),
+    align: (top + left, top + left, top + center, top + center, top + center, top + center),
+    stroke: 0.5pt,
 
-    // Fila 1
-    [IEEE], [2656], [261], [24], [1],
+    // Encabezado repetible en cada página
+    table.header(
+      [*Fuente*], [*Cadena de búsqueda*], [*Resultado*], [*Etapa 1*], [*Etapa 2*], [*Etapa 3*]
+    ),
 
-    // Fila 2
-    [ACM Digital\ Library], [226], [216], [15], [3],
+    // Filas de datos
+    [IEEE], [("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND ("soft skills" OR "critical thinking" OR "technical communication" OR "prompt engineering" OR collaborat\* OR teamwork OR "human-AI collaboration")], [2656], [261], [24], [1],
 
-    // Fila 3
-    [Scopus], [1514], [256], [37], [3],
+    [ACM Digital Library], [Abstract:("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND Abstract:("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND Abstract:("soft skills" OR "critical thinking" OR "technical communication" OR "prompt engineering" OR collaborat\* OR teamwork OR "human-AI collaboration")], [226], [216], [15], [3],
 
-    // Fila 4
-    [ArXiv], [580], [580], [23], [2],
+    [Scopus], [TITLE-ABS-KEY(("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND ("soft skills" OR "critical thinking" OR "technical communication" OR "prompt engineering" OR collaborat\* OR teamwork OR "human-AI collaboration"))], [1514], [256], [37], [3],
 
-    // Fila 5
-    [Science Direct], [2826], [1098], [23], [0],
+    [ArXiv], [(cat:cs.SE OR cat:cs.HC) AND (abs:"soft skills" OR abs:"critical thinking" OR abs:"prompt engineering" OR abs:"collaboration" OR abs:"communication" OR abs:"teamwork" OR abs:"human-AI collaboration") AND (abs:"large language model" OR abs:"LLM" OR abs:"generative AI" OR abs:"AI agent" OR abs:"vibe coding" OR abs:"AI-assisted") AND (abs:"software engineer" OR abs:"software developer" OR abs:"software development")], [580], [580], [23], [2],
 
-    // Fila 6 (Total)
-    [Total], [7802], [2411], [122], [*9*],
+    [Science Direct], [("software engineering" OR "software development") AND ("generative AI" OR "large language model" OR "AI agent") AND ("soft skills" OR "critical thinking" OR collaboration OR "prompt engineering")], [2826], [1098], [23], [0],
+
+    // Fila Total
+    [Total], [], [7802], [2411], [122], [*9*],
   ),
-  caption: [Resultados de la cadena de búsqueda 2]
+  caption: [Resultados de la búsqueda 2],
 ) <busqueda-2>
 
+#show figure.where(kind: table): set block(breakable: true)
+
 #figure(
   table(
-    // 5 columnas: la primera automática, las demás proporcionales
-    columns: (auto, 1fr, 1fr, 1fr, 1fr),
-    // Alineación: izquierda para texto, centrado para números
-    align: (col, row) => if col == 0 { horizon + left } else { horizon + center },
-    
-    // Encabezados
-    [], [Search], [Stage 1], [Stage 2], [Stage 3],
+    columns: (auto, 1fr, auto, auto, auto, auto),
+    align: (top + left, top + left, top + center, top + center, top + center, top + center),
+    stroke: 0.5pt,
+
+    // Encabezado repetible en cada página
+    table.header(
+      [*Fuente*], [*Cadena de búsqueda*], [*Resultado*], [*Etapa 1*], [*Etapa 2*], [*Etapa 3*]
+    ),
 
     // Filas de datos
-    [IEEE], [825], [28], [9], [2],
-    [ACM Digital\ Library], [70], [38], [8], [1],
-    [Scopus], [406], [63], [12], [1],
-    [ArXiv], [8893], [1071], [26], [2],
-    [Science Direct], [15835], [2486], [14], [0],
+    [IEEE], [("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND ("AI agent\*" OR "agentic coding" OR "vibe coding" OR "multi-agent" OR "AI-driven development" OR "agentic software engineering") AND (agile OR scrum OR "software process" OR "development process" OR methodolog\* OR workflow OR orchestrat\*)], [825], [28], [9], [2],
+
+    [ACM Digital Library], [Abstract:("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND Abstract:("AI agent\*" OR "agentic coding" OR "vibe coding" OR "multi-agent" OR "AI-driven development" OR "agentic software engineering") AND Abstract:(agile OR scrum OR "software process" OR "development process" OR methodolog\* OR workflow OR orchestrat\*)], [70], [38], [8], [1],
+
+    [Scopus], [TITLE-ABS-KEY(("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND ("AI agent\*" OR "agentic coding" OR "vibe coding" OR "multi-agent" OR "AI-driven development" OR "agentic software engineering") AND (agile OR scrum OR "software process" OR "development process" OR methodolog\* OR workflow OR orchestrat\*))], [406], [63], [12], [1],
+
+    [ArXiv], [cat:cs.SE AND (abs:"agile" OR abs:"scrum" OR abs:"software process" OR abs:"development process" OR abs:"methodology" OR abs:"workflow" OR abs:"orchestration") AND (abs:"AI agent" OR abs:"agentic" OR abs:"vibe coding" OR abs:"multi-agent" OR abs:"AI-driven development")], [8893], [1071], [26], [2],
+
+    [Science Direct], [("software engineering" OR "software development") AND ("AI agent" OR "agentic" OR "vibe coding") AND (agile OR "software process" OR methodology OR workflow)], [15835], [2486], [14], [0],
 
     // Fila Total
-    [Total], [26029], [3686], [69], [*6*],
+    [Total], [], [26029], [3686], [69], [*6*],
   ),
-  caption: [Resultado de la cadena de búsqueda 3],
+  caption: [Resultados de la búsqueda 3],
 ) <busqueda-3>
 
+#show figure.where(kind: table): set block(breakable: true)
+
 #figure(
   table(
-    // 5 columnas: la primera automática, las demás proporcionales
-    columns: (auto, 1fr, 1fr, 1fr, 1fr),
-    // Alineación: izquierda para texto, centrado para números
-    align: (col, row) => if col == 0 { horizon + left } else { horizon + center },
-    
-    // Encabezados
-    [], [Search], [Stage 1], [Stage 2], [Stage 3],
+    columns: (auto, 1fr, auto, auto, auto, auto),
+    align: (top + left, top + left, top + center, top + center, top + center, top + center),
+    stroke: 0.5pt,
+
+    // Encabezado repetible en cada página
+    table.header(
+      [*Fuente*], [*Cadena de búsqueda*], [*Resultado*], [*Etapa 1*], [*Etapa 2*], [*Etapa 3*]
+    ),
 
     // Filas de datos
-    [IEEE], [1995], [206], [48], [1],
-    [ACM Digital\ Library], [150], [118], [26], [2],
-    [Scopus], [1929], [326], [9], [1],
-    [ArXiv], [545], [472], [14], [2],
-    [Science Direct], [911], [357], [57], [1],
+    [IEEE], [("software engineering" OR "software development") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "artificial intelligence") AND ("software development life cycle" OR "software development lifecycle" OR SDLC OR "software life cycle" OR "software lifecycle" OR "requirements engineering" OR "software testing" OR "software maintenance" OR DevOps OR AIOps)], [1995], [206], [48], [1],
+
+    [ACM Digital Library], [Abstract:("software engineering" OR "software development") AND Abstract:("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "artificial intelligence") AND Abstract:("software development life cycle" OR "software development lifecycle" OR SDLC OR "software life cycle" OR "software lifecycle" OR "requirements engineering" OR "software testing" OR "software maintenance" OR DevOps OR AIOps)], [150], [118], [26], [2],
+
+    [Scopus], [TITLE-ABS-KEY(("software engineering" OR "software development") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "artificial intelligence") AND ("software development life cycle" OR "software development lifecycle" OR SDLC OR "software life cycle" OR "software lifecycle" OR "requirements engineering" OR "software testing" OR "software maintenance" OR DevOps OR AIOps))], [1929], [326], [9], [1],
+
+    [ArXiv], [cat:cs.SE AND (abs:"software development life cycle" OR abs:"software development lifecycle" OR abs:"SDLC" OR abs:"requirements engineering" OR abs:"software testing" OR abs:"software maintenance" OR abs:"DevOps") AND (abs:"large language model" OR abs:"LLM" OR abs:"generative AI" OR abs:"AI agent" OR abs:"agentic" OR abs:"vibe coding")], [545], [472], [14], [2],
+
+    [Science Direct], [("generative AI" OR "large language model" OR "AI agent") AND ("software development life cycle" OR SDLC OR "software lifecycle" OR "requirements engineering" OR "software testing")], [911], [357], [57], [1],
 
     // Fila Total
-    [Total], [5530], [1479], [154], [*7*],
+    [Total], [], [5530], [1479], [154], [*7*],
   ),
-  caption: [Resultado de la cadena de búsqueda 4],
+  caption: [Resultados de la búsqueda 4],
 ) <busqueda-4>
 
+#show figure.where(kind: table): set block(breakable: true)
+
 #figure(
   table(
-    // 5 columnas: la primera automática, las demás proporcionales
-    columns: (auto, 1fr, 1fr, 1fr, 1fr),
-    // Alineación: izquierda para texto, centrado para números
-    align: (col, row) => if col == 0 { horizon + left } else { horizon + center },
-    
-    // Encabezados
-    [], [Search], [Stage 1], [Stage 2], [Stage 3],
+    columns: (auto, 1fr, auto, auto, auto, auto),
+    align: (top + left, top + left, top + center, top + center, top + center, top + center),
+    stroke: 0.5pt,
+
+    // Encabezado repetible en cada página
+    table.header(
+      [*Fuente*], [*Cadena de búsqueda*], [*Resultado*], [*Etapa 1*], [*Etapa 2*], [*Etapa 3*]
+    ),
 
     // Filas de datos
-    [IEEE], [1242], [83], [8], [0],
-    [ACM Digital\ Library], [300], [275], [44], [0],
-    [Scopus], [1264], [238], [18], [0],
-    [ArXiv], [739], [432], [17], [1],
-    [Science Direct], [6731], [1780], [5], [0],
+    [IEEE], [("AI-generated code" OR "LLM-generated code" OR "generated code" OR "code generation") AND (validation OR verification OR "code review" OR "quality assurance" OR "code quality" OR "technical debt" OR vulnerabilit\* OR hallucinat\* OR "software quality") AND ("large language model\*" OR LLM\* OR "generative AI" OR "AI agent\*" OR "vibe coding" OR "AI coding assistant\*" OR "GitHub Copilot")], [1242], [83], [8], [0],
+
+    [ACM Digital Library], [Abstract:("AI-generated code" OR "LLM-generated code" OR "generated code" OR "code generation") AND Abstract:(validation OR verification OR "code review" OR "quality assurance" OR "code quality" OR "technical debt" OR vulnerabilit\* OR hallucinat\* OR "software quality") AND Abstract:("large language model\*" OR LLM\* OR "generative AI" OR "AI agent\*" OR "vibe coding" OR "AI coding assistant\*" OR "GitHub Copilot")], [300], [275], [44], [0],
+
+    [Scopus], [TITLE-ABS-KEY(("AI-generated code" OR "LLM-generated code" OR "generated code" OR "code generation") AND (validation OR verification OR "code review" OR "quality assurance" OR "code quality" OR "technical debt" OR vulnerabilit\* OR hallucinat\* OR "software quality") AND ("large language model\*" OR LLM\* OR "generative AI" OR "AI agent\*" OR "vibe coding" OR "AI coding assistant\*" OR "GitHub Copilot"))], [1264], [238], [18], [0],
+
+    [ArXiv], [cat:cs.SE AND (abs:"AI-generated code" OR abs:"LLM-generated code" OR abs:"generated code") AND (abs:"validation" OR abs:"verification" OR abs:"code review" OR abs:"code quality" OR abs:"technical debt" OR abs:"vulnerabilities" OR abs:"hallucination")], [739], [432], [17], [1],
+
+    [Science Direct], [("AI-generated code" OR "LLM-generated code" OR "generated code") AND (validation OR "code review" OR "code quality" OR "technical debt" OR vulnerabilities)], [6731], [1780], [5], [0],
 
     // Fila Total
-    [Total], [10276], [2808], [92], [*1*],
+    [Total], [], [10276], [2808], [92], [*1*],
   ),
-  caption: [Resultado de la cadena de búsqueda 5],
+  caption: [Resultados de la búsqueda 5],
 ) <busqueda-5>
 
 == Evaluación de calidad
