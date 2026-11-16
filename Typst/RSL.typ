@@ -259,13 +259,13 @@ Esta investigación se considera viable ya que se fundamenta en la revisión doc
     ),
 
     // Filas de datos
-    [CI1 Papers, capítulos de libros, y artículos de revistas publicados entre los años 2020 y 2026.], [CE1 En fuentes multidisciplinarias, el estudio no está en el área de Ingeniería o Computer Science.],
+    [CI1 Papers, capítulos de libros, artículos de revistas publicados y versiones preliminares de artículos publicados entre los años 2020 y 2026.], [CE1 En fuentes multidisciplinarias, el estudio no está en el área de Ingeniería o Computer Science.],
 
-    [CI2 Papers escritos en inglés.], [CE2 La publicación es una presentación o reporte técnico.],
+    [CI2 Fuentes escritas en inglés.], [CE2 La fuente es una presentación o reporte técnico.],
 
-    [CI3 Papers con acceso completo.], [CE3 Papers duplicados.],
+    [CI3 Fuentes con acceso completo.], [CE3 Fuentes duplicadas.],
 
-    [CI4 Título y el abstract puedan dar respuesta al menos una pregunta de investigación.], [CE4 Después de leer los paper, no aborda ninguna pregunta de investigación.],
+    [CI4 Título y el abstract puedan dar respuesta al menos una pregunta de investigación.], [CE4 Después de leer la fuente, no aborda ninguna pregunta de investigación.],
 
     [CI5 Leyendo el contenido responde al menos una pregunta de investigación.], [],
   ),
@@ -275,17 +275,17 @@ Esta investigación se considera viable ya que se fundamenta en la revisión doc
 == Proceso de búsqueda
 
 Para la etapa 1 se aplicaron los siguientes criterios inclusión y exclusión:
-- Papers, capítulos de libros, y artículos de revistas publicados entre los años 2020 y 2026. (CI1)
-- Papers escritos en inglés o español. (CI2)
-- Papers con acceso completo. (CI3)
+- Papers, capítulos de libros, artículos de revistas publicados y versiones preliminares de artículos publicados entre los años 2020 y 2026. (CI1)
+- Fuentes escritas en inglés. (CI2)
+- Fuentes con acceso completo. (CI3)
 Para la etapa 2 se aplicaron los siguientes criterios de inclusión y exclusión:
 - Título y el abstract puedan dar respuesta al menos una pregunta de investigación. (CI4)
 - En fuentes multidisciplinarias, el estudio no está en el área de Ingeniería o Computer Science. (CE1)
-- La publicación es una presentación o reporte técnico (CE2)
+- La fuente es una presentación o reporte técnico (CE2)
 Para la etapa 3 se aplicaron los siguientes criterios de inclusión y exclusión:
 - Leyendo el contenido responde al menos una pregunta de investigación. (CI5)
 - Papers duplicados. (CE3)
-- Después de leer los paper, no aborda ninguna pregunta de investigación. (CE4)
+- Después de leer la fuente, no aborda ninguna pregunta de investigación. (CE4)
 
 
 #show figure.where(kind: table): set block(breakable: true)
@@ -487,10 +487,10 @@ Para la evaluación de la calidad de las fuentes se tomaron en cuenta los criter
     [2], [A Comprehensive Framework for Intelligent, Scalable, and Performance-Optimized Software Development], [Y], [Y], [P], [P], [N], [N], [P], [P], [Y], [N], [N], [N], [4.5],
     [3], [A Framework for Evaluating GenAI Adoption and Use in Software Engineering], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [12.0],
     [4], [Agentic AI in the Software Development Lifecycle: Architecture, Empirical Evidence, and the Reshaping of Software Engineering], [Y], [Y], [N], [N], [N], [P], [Y], [N], [Y], [N], [P], [Y], [6.0],
-    [5], [Are We All Using Agents the Same Way An Empirical Study of Core and Peripheral Developers Use of Coding Agents], [], [], [], [], [], [], [], [], [], [], [], [], [],
+    [5], [Are We All Using Agents the Same Way An Empirical Study of Core and Peripheral Developers Use of Coding Agents], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [P], [Y], [Y], [Y], [Y], [11.5],
     [6], [Better Together: An LLM-Assisted Approach to Designing Software Architectures Using Attribute-Driven Design], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [12.0],
     [7], [CICAP: A Human-AI Co-creation Paradigm for Ethical and Efficient Plugin Development in Moodle], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [N], [Y], [11.0],
-    [8], [Code with Me or for Me? How Increasing AI Automation Transforms Developer Workflows], [], [], [], [], [], [], [], [], [], [], [], [], [],
+    [8], [Code with Me or for Me? How Increasing AI Automation Transforms Developer Workflows], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [12.0],
     [9], [Command Coding: A Methodological Framework for AI-Accelerated Software Development], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [12.0],
     [10], [Copiloting the future: How generative AI transforms Software Engineering], [Y], [Y], [Y], [P], [Y], [Y], [Y], [Y], [Y], [P], [Y], [Y], [11.0],
     [11], [Empowering Agile-Based Generative Software Development through Human-AI Teamwork], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [N], [Y], [N], [Y], [Y], [10.0],
@@ -507,8 +507,8 @@ Para la evaluación de la calidad de las fuentes se tomaron en cuenta los criter
     [22], [SDAD: Spec-Driven Agentic Development for the AI-Native SDLC], [Y], [Y], [P], [P], [N], [N], [Y], [P], [Y], [Y], [Y], [Y], [8.5],
     [23], [Software Engineering by and for Humans in an AI Era], [Y], [Y], [Y], [N], [N], [N], [Y], [N], [Y], [N], [Y], [Y], [7.0],
     [24], [The Impact of Modern AI on Software Development: A Systematic Literature Review], [Y], [Y], [P], [P], [P], [Y], [Y], [P], [Y], [N], [Y], [Y], [9.0],
-    [25], [The role of LLMs in Collaborative Software Design], [], [], [], [], [], [], [], [], [], [], [], [], [],
-    [26], [The Role of Software Engineering Knowledge in Shaping Effective AI-Driven Development], [], [], [], [], [], [], [], [], [], [], [], [], [],
+    [25], [The role of LLMs in Collaborative Software Design], [Y], [Y], [Y], [P], [P], [P], [Y], [N], [Y], [P], [Y], [Y], [9.0],
+    [26], [The Role of Software Engineering Knowledge in Shaping Effective AI-Driven Development], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [12.0],
     [27], [Using LLMs in Software Design: An Empirical Study of GitHub and A Practitioner Survey], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [Y], [12.0],
     [28], [Vibe Coding as a Reconfiguration of Intent Mediation in Software Development: Definition, Implications, and Research Agenda], [Y], [Y], [P], [N], [N], [P], [P], [N], [Y], [P], [Y], [Y], [6.0],
     [29], [What Will Remain Human in Software Architecture? A Focus Group Report], [Y], [Y], [Y], [N], [Y], [Y], [Y], [N], [Y], [Y], [Y], [Y], [10.0],
@@ -721,7 +721,11 @@ Finalmente, el aseguramiento de la calidad y la mitigación de riesgos asociados
 
 = Recomendaciones
 
-Para el desarrollo de esta Revisión Sistemática de Literatura se tomaron en cuenta las bases de datos IEEE, ACM, Scopus, Science Direct y Arxiv. Para el tema presentado en esta investigación la literatura gris no queda fuera del alcance, puesto que de acuerdo a las tendencias observadas en el análisis de datos la información respecto a metodologías es reciente, y Arxiv es una excelente herramienta para buscar información actualizada.
+Para el desarrollo de esta Revisión Sistemática de Literatura se tomaron en cuenta las bases de datos IEEE, ACM, Scopus, Science Direct y Arxiv. Para el tema presentado en esta investigación la literatura gris no queda fuera del alcance, puesto que de acuerdo a las tendencias observadas en el análisis de datos la información respecto a metodologías es reciente, se recomienda ampliamente la base de datos Arxiv ya que es una buena herramienta para buscar información actualizada.
+
+Para la evaluación de criterios de calidad de las fuentes obtenidas tras la etapa 3, se recomiendan las directrices de Kitchenham y Charters puesto que son un buen instrumento para la selección final de fuentes. Para la presente investigación, fue relevante para filtrar los artículos que contaban con evidencia empírica y descartar las investigaciones secundarios con base al propósito de esta investigación.
+
+También se recomiendan herramientas de trabajo como Zotero para la gestión de fuentes porque permite almacenar rápidamente un artículo de manera local desde un navegador y organizar los artículos en colecciones y descartarlas en pocos pasos.
 
 // Referencias
 #pagebreak()
