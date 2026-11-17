@@ -116,6 +116,13 @@
 
   pagebreak()
 
+  // --- ÍNDICE DE FIGURAS ---
+
+  outline(
+    title: [Índice de Tablas y Figuras],
+    target: figure,
+  )
+
   // --- CONFIGURACIÓN DEL CONTENIDO PRINCIPAL ---
   // A partir de aquí encendemos el encabezado.
   set page(
@@ -144,34 +151,11 @@
 
 = Resumen
 
-Extensión de entre 150 y 300 palabras, que describa de forma general
-el contenido del documento. Cuál es el tema, importancia de abordarlo,
-comentar el objetivo, el diseño: enfoque, alcance, corte, etc. Mencionar
-la propuesta de técnicas e instrumentos para la investigación, entre
-otros aspectos de interés. Párrafo en tipografía Times New Roman a 12
-pts., con interlineado de 21 pts., sin sangría. Este es un ejemplo de
-texto simulado y contiene las características de los párrafos de este
-documento.
+La integración de agentes de codificación y modelos de inteligencia artificial generativa transformó la forma en que se planifican, diseñan, construyen y validan los proyectos de software. Ante este cambio de paradigma, resulta necesario reconocer las prácticas, metodologías y competencias que se requieren de los ingenieros de software, así como los criterios que deben orientar su formación académica. El objetivo de la investigación consiste en analizar las prácticas de diseño arquitectónico, las dinámicas de comunicación y colaboración, las metodologías de trabajo, la estructura del ciclo de vida y las prácticas de validación de la calidad en el desarrollo de software asistido por IA.
 
-Sangría a partir del segundo párrafo, observarlo en todo el documento.
-El contenido del documento debe integrarse de acuerdo con la guía
-proporcionada. Debe leer con atención las indicaciones que contiene
-esta plantilla, no modifique el formato que aquí se muestra, el documento
-final debe corresponder totalmente con los lineamientos de formato que
-aquí se explican.
+El estudio tiene un enfoque descriptivo, cualitativo, no experimental y de temporalidad transversal. Se empleó la técnica de Revisión Sistemática de la Literatura (RSL), conforme a las directrices de Kitchenham y Charters. Se aplicaron cinco cadenas de búsqueda, una por cada pregunta de investigación, en las bases de datos IEEE, ACM Digital Library, Scopus, ScienceDirect y arXiv, para el periodo 2020-2026. De 58,055 registros recuperados, un proceso de selección en tres etapas con criterios de inclusión y exclusión permitió identificar 30 estudios, cuya calidad se evaluó mediante un cuestionario de 12 preguntas.
 
-En la redacción de todo el documento empleen un estilo apropiado a un
-texto de carácter científico y del contexto académico. No utilicen
-redacción en primera persona ni plural ni singular (presentamos, tenemos,
-decimos, etc., no es correcto), prefieran redacción en tercera persona
-(se presenta, se tiene, etc.), tampoco se recomienda el uso del verbo “decir”
-pues al ser un trabajo escrito, no es congruente. Adicionalmente, eviten el
-uso de gerundios (ejemplo: Esta situación se ha venido presentando desde…,
-lo correcto es: Esta situación se presentó desde…).
-
-Observen que esta plantilla ya tiene el formato definido para todo el
-contenido del documento, no modifiquen estilo, interlineado, tipo de
-letra, ni cualquier otro aspecto de formato.
+Los hallazgos indican que la IA actúa como facilitador del diseño de alto nivel, siempre que el ingeniero guíe el proceso y especifique con precisión. Metodologías emergentes como Command Coding, CICAP y Specification-Driven Development han reducido el tiempo de desarrollo en hasta 60%. El ciclo de vida se extiende hacia una etapa previa de ideación y se apoya en la IA en cada fase. Los equipos tienden a reducirse y a delegar las tareas rutinarias a la IA, y la calidad del código se asegura mediante una validación en múltiples capas.
 
 = Palabras clave
 
@@ -314,14 +298,20 @@ publicada entre 2020 y 2026 procedente de las bases de datos IEEE, ACM Digital L
 Para establecer la estrategia del trabajo, se toman en cuenta las contribuciones a la metodología de investigación de #cite(<sampieri2014metodología>, form: "prose").
 
 El estudio tiene un enfoque descriptivo cuyo objeto de estudio son las tendencias actuales de desarrollo de software y su adaptación para el aprendizaje. Por tal motivo, es una investigación cualitativa y no experimental ya que se fundamenta en la revisión de literatura científica para la comprensión de las prácticas de construcción de software modernas. Debido al enfoque descriptivo, no hay manipulación de variables que deban estudiarse por un periodo longitudinal. En tal caso, se trata de una investigación de temporalidad transversal con respecto a la recopilación de información científica.
-/* 
 
-("vibe coding" OR "AI-assisted coding" OR "LLM development" OR "GitHub Copilot" OR "generative AI") AND ("productivity" OR "efficiency" OR "time-to-market" OR "resource allocation") AND ("software development" OR "software engineering") AND ("data" OR "empirical" OR "metrics")
+= Técnica e instrumentos de investigación
 
-("software development" OR "software industry" OR "software engineering") AND ("time pressure" OR "development time" OR "schedule pressure" OR "time constraints" OR "delivery deadlines")
+La técnica seleccionada fue la Revisión Sistemática de la Literatura (RSL), desarrollada bajo las directrices metodológicas de Kitchenham y Charters. Esta técnica se eligió porque ofrece un procedimiento explícito, replicable y auditable para identificar, filtrar y sintetizar la evidencia científica disponible sobre un tema. Dado que la integración de la IA en la ingeniería de software es un campo reciente y con una producción de literatura acelerada, la RSL permite delimitar qué se ha estudiado, con qué rigor y con qué resultados, sin depender de la selección arbitraria de fuentes. 
 
+Dado que la investigación se basa en la revisión documental, los sujetos de estudio son publicaciones científicas. La población se conformó por la literatura indexada en cinco bases de datos: IEEE Xplore, ACM Digital Library, Scopus, ScienceDirect y arXiv. IEEE y ACM concentran gran parte de la producción especializada en ingeniería de software y ciencias de la computación. Scopus y ScienceDirect son de enfoque multidisciplinar y revistas arbitradas, mientras que arXiv permite acceder a versiones preliminares de artículos. Esto es relevante porque los marcos de trabajo con IA son tan nuevos que parte de la evidencia aún no pasa por los ciclos habituales de publicación.
 
- */
+El proceso inició con la formulación de cinco preguntas de investigación, a partir de las cuales se definieron cinco cadenas de búsqueda en los siguientes ámbitos de desarrollo con IA: etapas del ciclo de vida, metodologías de trabajo con inteligencia artificial, diseño arquitectónico, dinámicas de colaboración, comunicación y pensamiento crítico y validación de la calidad del código generado con IA. Cada cadena combinó términos relativos a la ingeniería de software, a la IA generativa y al aspecto específico de interés. Se adaptó la sintaxis de búsqueda a cada base de datos y se limitó el periodo de publicación a 2020-2026.
+
+Los resultados se depuraron en tres etapas. En la primera se aplicaron criterios formales (periodo de publicación, idioma y acceso completo al documento). En la segunda se revisaron el título y el resumen y se descartaron los estudios ajenos al área de ingeniería o computación, así como las presentaciones y los reportes técnicos. En la tercera se leyó el contenido completo y se eliminaron duplicados para únicamente los estudios que respondían al menos una pregunta de investigación. De los 58,055 registros recuperados, 13,097 superaron la primera etapa, 501 la segunda y 30 la tercera.
+
+Los instrumentos empleados fueron las cadenas de búsqueda, la tabla de criterios de inclusión y exclusión, y el cuestionario de calidad propuesto por Kitchenham, compuesto por 12 preguntas con respuesta afirmativa (1 punto), parcial (0.5) o negativa (0). Se puso especial énfasis en las preguntas 3, 4 y 5, relativas a la recopilación de datos. Las fuentes con una puntuación menor a 2 se identificaron como estudios secundarios o propuestas teóricas sin datos empíricos.
+
+Para el análisis de los datos se elaboraron tablas de síntesis por pregunta de investigación y figuras descriptivas sobre la distribución de los estudios por año, el tipo de investigación y la proporción de estudios que proponen marcos de trabajo. Estas permitieron contrastar los hallazgos de cada fuente y derivar las conclusiones.
 
 // Referencias
 #pagebreak()
