@@ -170,41 +170,22 @@ debido a la investigación de nuevos métodos y sobre todo a las tecnologías e 
 de cómputo. También es cierto que hay principios que permanecen vigentes y que fundamentan
 el enfoque sistemático del desarrollo. Para #cite(<11645215>, form: "prose"), la abstracción,
 el refinamiento sucesivo, divide y vencerás, y, a favor de hacer software para el ciudadano común,
-la integración de los resultados de investigación científica en software interdisciplinar (Internet
-de las Cosas, algoritmos genéticos, etc.). Es así como la Ingeniería de Software ha tenido cambios
-constantes que se han dirigido desde un enfoque en el hardware hacia una visión centrada en el
-usuario. El software ya no es solamente un sistema de uso científico o ingenieril,
+la integración de los resultados de investigación científica en software interdisciplinar (Internet de las Cosas, algoritmos genéticos, etc.). Es así como la Ingeniería de Software ha tenido cambios constantes que se han dirigido desde un enfoque en el hardware hacia una visión centrada en el usuario. El software ya no es solamente un sistema de uso científico o ingenieril,
 sino que se ha convertido en un producto de uso cotidiano accesible para el público general.
 
 Por otro lado, la historia de la inteligencia artificial como disciplina también ha tenido avances
 cada vez más rápidos en los campos de deep learning y redes neuronales profundas. Pero fue en el
-año de 2024 cuando aumentaron las herramientas y tecnologías potenciadas por asistentes de codificación
-que el uso de inteligencia artificial en el desarrollo de software cobró relevancia. Los agentes de
-IA ya eran capaces de interactuar con herramientas de terceros, realizar búsquedas en la web, y actuar
-sobre el entorno digital, dejando de ser una herramienta secundaria a un componente activo en el
-desarrollo. Para 2025, el científico Andrej Karpathy hizo uso del concepto de “Vibe Coding” para
-referirse a la generación de código mediante lenguaje natural.
+año de 2024 cuando aumentaron las herramientas y tecnologías potenciadas por asistentes de codificación que el uso de inteligencia artificial en el desarrollo de software cobró relevancia. Los agentes de IA ya eran capaces de interactuar con herramientas de terceros, realizar búsquedas en la web, y actuar sobre el entorno digital, dejando de ser una herramienta secundaria a un componente activo en el desarrollo. Para 2025, el científico Andrej Karpathy hizo uso del concepto de “Vibe Coding” para referirse a la generación de código mediante lenguaje natural.
 
-Como ingeniería, siempre ha sido de interés el aumentar la eficiencia en el desarrollo de proyectos.
-Primariamente, las dinámicas en los equipos de trabajo, los procesos y metodologías como Scrum han
-agilizado los tiempos de los proyectos, pero el uso de inteligencia artificial ha mejorado considerablemente
-el ritmo de trabajo. #cite(<11404330>, form: "prose") señalan que se han observado tiempos de desarrollo
-que se reducen de meses a semanas o días al examinar los resultados del vibe coding en proyectos reales.
+Como ingeniería, siempre ha sido de interés el aumentar la eficiencia en el desarrollo de proyectos. Primariamente, las dinámicas en los equipos de trabajo, los procesos y metodologías como Scrum han agilizado los tiempos de los proyectos, pero el uso de inteligencia artificial ha mejorado considerablemente el ritmo de trabajo. #cite(<11404330>, form: "prose") señalan que se han observado tiempos de desarrollo que se reducen de meses a semanas o días al examinar los resultados del vibe coding en proyectos reales.
 Los equipos de trabajo pueden dedicar más tiempo a la innovación, prototipos y lógica de negocio
 debido a la automatización de generación de código.
 
-Frente a esta situación, quienes ignoran el uso de la inteligencia artificial
-se encuentran en posición de desventaja para hacer frente a las necesidades del
-desarrollo moderno, que exige tiempos y dinámicas más rápidas. Si el vibe coding
-resulta ahora indispensable para el desarrollo, entonces el problema es reconocer
-las nuevas prácticas, habilidades, procesos y metodologías que respondan
-eficientemente a las tendencias actuales.
+Frente a esta situación, quienes ignoran el uso de la inteligencia artificial se encuentran en posición de desventaja para hacer frente a las necesidades del desarrollo moderno, que exige tiempos y dinámicas más rápidas. Si el vibe coding resulta ahora indispensable para el desarrollo, entonces el problema es reconocer las nuevas prácticas, habilidades, procesos y metodologías que respondan eficientemente a las tendencias actuales.
 
 A partir de esta transición del desarrollo tradicional hacia un modelo fundamentado en
 la orquestación mediante agentes autónomos de inteligencia artificial, surge la necesidad
-de replantear los principios actuales de la disciplina. Este trabajo pretende determinar cuáles son
-las metodologías, competencias críticas y criterios educativos que deben estructurar la formación y el
-desempeño de los ingenieros de software, que garanticen la efectividad operativa del desarrollo.
+de replantear los principios actuales de la disciplina. Este trabajo pretende determinar cuáles son las metodologías, prácticas de ingeniería de software y dinámicas de colaboración, comunicación y pensamiento crítico que garantizen la efectividad operativa del desarrollo.
 
 #pagebreak()
 
@@ -217,18 +198,18 @@ Analizar los conocimientos, tecnologías, competencias y criterios de formación
 
 === Objetivos Específicos:
 
-1. Identificar las prácticas actuales de diseño de arquitectura y desarrollo de sistemas de los ingenieros de software potenciadas con el uso de IA.
-2. Examinar la comunicación, pensamiento crítico y trabajo colaborativo de los ingenieros de software en un contexto de trabajo asistido por IA.
-3. Determinar las metodologías de trabajo y procesos que optimizan los recursos de un proyecto de desarrollo de software mediante la orquestación de agentes de IA.
-4. Analizar cómo se estructuran las etapas del ciclo de vida del software en los modelos que integran IA.
-5. Identificar las prácticas de validación y aseguramiento de la calidad que emplean los ingenieros de software para mitigar los riesgos del código generado por agentes de IA. 
++ Analizar cómo se estructuran las etapas del ciclo de vida del software en los modelos que integran IA.
++ Determinar las metodologías de trabajo y procesos que optimizan los recursos de un proyecto de desarrollo de software mediante la orquestación de agentes de IA.
++ Identificar las prácticas actuales de diseño de arquitectura y desarrollo de sistemas de los ingenieros de software potenciadas con el uso de IA.
++ Examinar la comunicación, pensamiento crítico y trabajo colaborativo de los ingenieros de software en un contexto de trabajo asistido por IA.
++ Identificar las prácticas de validación y aseguramiento de la calidad que emplean los ingenieros de software para mitigar los riesgos del código generado por agentes de IA. 
 
 == Pregunta de investigación
 
-+ ¿Cuáles son las prácticas de los ingenieros de software en el diseño arquitectónico de sistemas cuando el proceso de desarrollo es dirigido por IA? 
-+ ¿De qué manera la integración de la IA generativa redefine la comunicación técnica, el pensamiento crítico y la colaboración en los equipos de desarrollo de software?
-+ Si el desarrollo se lleva a cabo con el uso de agentes de IA, ¿cuáles son las metodologías de trabajo y procesos que resultan más efectivos para optimizar el desarrollo?
-+ ¿Cómo se estructuran las etapas del ciclo de vida de software con la integración de IA?
++ ¿Cómo se estructuran las etapas del ciclo de vida de software con la integración de IA generativa?
++ Si el desarrollo se lleva a cabo con el uso de IA generativa, ¿cuáles son las metodologías de trabajo que resultan más efectivos para optimizar el desarrollo de software?
++ ¿Cuáles son las prácticas de los ingenieros de software en el diseño arquitectónico de sistemas cuando el proceso de desarrollo es dirigido por IA generativa? 
++ ¿De qué manera la integración de la IA generativa influye en la comunicación, el pensamiento crítico y la colaboración en los equipos de desarrollo de software?
 + ¿Qué prácticas de validación y aseguramiento de la calidad emplean los ingenieros de software para mitigar los riesgos del código generado por agentes de IA? 
 
 == Justificación
@@ -287,7 +268,6 @@ Para la etapa 3 se aplicaron los siguientes criterios de inclusión y exclusión
 - Papers duplicados. (CE3)
 - Después de leer la fuente, no aborda ninguna pregunta de investigación. (CE4)
 
-
 #show figure.where(kind: table): set block(breakable: true)
 
 #figure(
@@ -302,51 +282,21 @@ Para la etapa 3 se aplicaron los siguientes criterios de inclusión y exclusión
     ),
 
     // Filas de datos
-    [IEEE], [("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND ("software architecture" OR "architectural design" OR "software design" OR "system design" OR "code generation")], [3829], [531], [9], [2],
+    [IEEE], [("software engineering" OR "software development") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "artificial intelligence") AND ("software development life cycle" OR "software development lifecycle" OR SDLC OR "software life cycle" OR "software lifecycle" OR "requirements engineering" OR "software testing" OR "software maintenance" OR DevOps OR AIOps)], [1995], [206], [48], [1],
 
-    [ACM Digital Library], [Abstract:("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND Abstract:("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND Abstract:("software architecture" OR "architectural design" OR "software design" OR "system design" OR "code generation")], [231], [220], [12], [1],
+    [ACM Digital Library], [Abstract:("software engineering" OR "software development") AND Abstract:("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "artificial intelligence") AND Abstract:("software development life cycle" OR "software development lifecycle" OR SDLC OR "software life cycle" OR "software lifecycle" OR "requirements engineering" OR "software testing" OR "software maintenance" OR DevOps OR AIOps)], [150], [118], [26], [2],
 
-    [Scopus], [TITLE-ABS-KEY(("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND ("software architecture" OR "architectural design" OR "software design" OR "system design" OR "code generation"))], [2118], [169], [12], [2],
+    [Scopus], [TITLE-ABS-KEY(("software engineering" OR "software development") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "artificial intelligence") AND ("software development life cycle" OR "software development lifecycle" OR SDLC OR "software life cycle" OR "software lifecycle" OR "requirements engineering" OR "software testing" OR "software maintenance" OR DevOps OR AIOps))], [1929], [326], [9], [1],
 
-    [ArXiv], [cat:cs.SE AND (abs:"software architecture" OR abs:"architectural design" OR abs:"software design" OR abs:"system design") AND (abs:"large language model" OR abs:"LLM" OR abs:"generative AI" OR abs:"AI agent" OR abs:"agentic" OR abs:"vibe coding" OR abs:"AI-assisted")], [1607], [1559], [22], [2],
+    [ArXiv], [cat:cs.SE AND (abs:"software development life cycle" OR abs:"software development lifecycle" OR abs:"SDLC" OR abs:"requirements engineering" OR abs:"software testing" OR abs:"software maintenance" OR abs:"DevOps") AND (abs:"large language model" OR abs:"LLM" OR abs:"generative AI" OR abs:"AI agent" OR abs:"agentic" OR abs:"vibe coding")], [545], [472], [14], [2],
 
-    [Science Direct], [("software engineering" OR "software development") AND ("generative AI" OR "large language model" OR "AI agent" OR "vibe coding") AND ("software architecture" OR "software design")], [633], [234], [9], [0],
+    [Science Direct], [("generative AI" OR "large language model" OR "AI agent") AND ("software development life cycle" OR SDLC OR "software lifecycle" OR "requirements engineering" OR "software testing")], [911], [357], [57], [1],
 
     // Fila Total
-    [Total], [], [8418], [2713], [64], [*7*],
+    [Total], [], [5530], [1479], [154], [*7*],
   ),
   caption: [Resultados de la búsqueda 1],
 ) <busqueda-1>
-
-#show figure.where(kind: table): set block(breakable: true)
-
-#figure(
-  table(
-    columns: (auto, 1fr, auto, auto, auto, auto),
-    align: (top + left, top + left, top + center, top + center, top + center, top + center),
-    stroke: 0.5pt,
-
-    // Encabezado repetible en cada página
-    table.header(
-      [*Fuente*], [*Cadena de búsqueda*], [*Resultado*], [*Etapa 1*], [*Etapa 2*], [*Etapa 3*]
-    ),
-
-    // Filas de datos
-    [IEEE], [("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND ("soft skills" OR "critical thinking" OR "technical communication" OR "prompt engineering" OR collaborat\* OR teamwork OR "human-AI collaboration")], [2656], [261], [24], [1],
-
-    [ACM Digital Library], [Abstract:("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND Abstract:("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND Abstract:("soft skills" OR "critical thinking" OR "technical communication" OR "prompt engineering" OR collaborat\* OR teamwork OR "human-AI collaboration")], [226], [216], [15], [3],
-
-    [Scopus], [TITLE-ABS-KEY(("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND ("soft skills" OR "critical thinking" OR "technical communication" OR "prompt engineering" OR collaborat\* OR teamwork OR "human-AI collaboration"))], [1514], [256], [37], [3],
-
-    [ArXiv], [(cat:cs.SE OR cat:cs.HC) AND (abs:"soft skills" OR abs:"critical thinking" OR abs:"prompt engineering" OR abs:"collaboration" OR abs:"communication" OR abs:"teamwork" OR abs:"human-AI collaboration") AND (abs:"large language model" OR abs:"LLM" OR abs:"generative AI" OR abs:"AI agent" OR abs:"vibe coding" OR abs:"AI-assisted") AND (abs:"software engineer" OR abs:"software developer" OR abs:"software development")], [580], [580], [23], [2],
-
-    [Science Direct], [("software engineering" OR "software development") AND ("generative AI" OR "large language model" OR "AI agent") AND ("soft skills" OR "critical thinking" OR collaboration OR "prompt engineering")], [2826], [1098], [23], [0],
-
-    // Fila Total
-    [Total], [], [7802], [2411], [122], [*9*],
-  ),
-  caption: [Resultados de la búsqueda 2],
-) <busqueda-2>
 
 #show figure.where(kind: table): set block(breakable: true)
 
@@ -375,6 +325,36 @@ Para la etapa 3 se aplicaron los siguientes criterios de inclusión y exclusión
     // Fila Total
     [Total], [], [26029], [3686], [69], [*6*],
   ),
+  caption: [Resultados de la búsqueda 2],
+) <busqueda-2>
+
+#show figure.where(kind: table): set block(breakable: true)
+
+#figure(
+  table(
+    columns: (auto, 1fr, auto, auto, auto, auto),
+    align: (top + left, top + left, top + center, top + center, top + center, top + center),
+    stroke: 0.5pt,
+
+    // Encabezado repetible en cada página
+    table.header(
+      [*Fuente*], [*Cadena de búsqueda*], [*Resultado*], [*Etapa 1*], [*Etapa 2*], [*Etapa 3*]
+    ),
+
+    // Filas de datos
+    [IEEE], [("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND ("software architecture" OR "architectural design" OR "software design" OR "system design" OR "code generation")], [3829], [531], [9], [2],
+
+    [ACM Digital Library], [Abstract:("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND Abstract:("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND Abstract:("software architecture" OR "architectural design" OR "software design" OR "system design" OR "code generation")], [231], [220], [12], [1],
+
+    [Scopus], [TITLE-ABS-KEY(("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND ("software architecture" OR "architectural design" OR "software design" OR "system design" OR "code generation"))], [2118], [169], [12], [2],
+
+    [ArXiv], [cat:cs.SE AND (abs:"software architecture" OR abs:"architectural design" OR abs:"software design" OR abs:"system design") AND (abs:"large language model" OR abs:"LLM" OR abs:"generative AI" OR abs:"AI agent" OR abs:"agentic" OR abs:"vibe coding" OR abs:"AI-assisted")], [1607], [1559], [22], [2],
+
+    [Science Direct], [("software engineering" OR "software development") AND ("generative AI" OR "large language model" OR "AI agent" OR "vibe coding") AND ("software architecture" OR "software design")], [633], [234], [9], [0],
+
+    // Fila Total
+    [Total], [], [8418], [2713], [64], [*7*],
+  ),
   caption: [Resultados de la búsqueda 3],
 ) <busqueda-3>
 
@@ -392,18 +372,18 @@ Para la etapa 3 se aplicaron los siguientes criterios de inclusión y exclusión
     ),
 
     // Filas de datos
-    [IEEE], [("software engineering" OR "software development") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "artificial intelligence") AND ("software development life cycle" OR "software development lifecycle" OR SDLC OR "software life cycle" OR "software lifecycle" OR "requirements engineering" OR "software testing" OR "software maintenance" OR DevOps OR AIOps)], [1995], [206], [48], [1],
+    [IEEE], [("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND ("soft skills" OR "critical thinking" OR "technical communication" OR "prompt engineering" OR collaborat\* OR teamwork OR "human-AI collaboration")], [2656], [261], [24], [1],
 
-    [ACM Digital Library], [Abstract:("software engineering" OR "software development") AND Abstract:("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "artificial intelligence") AND Abstract:("software development life cycle" OR "software development lifecycle" OR SDLC OR "software life cycle" OR "software lifecycle" OR "requirements engineering" OR "software testing" OR "software maintenance" OR DevOps OR AIOps)], [150], [118], [26], [2],
+    [ACM Digital Library], [Abstract:("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND Abstract:("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND Abstract:("soft skills" OR "critical thinking" OR "technical communication" OR "prompt engineering" OR collaborat\* OR teamwork OR "human-AI collaboration")], [226], [216], [15], [3],
 
-    [Scopus], [TITLE-ABS-KEY(("software engineering" OR "software development") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "artificial intelligence") AND ("software development life cycle" OR "software development lifecycle" OR SDLC OR "software life cycle" OR "software lifecycle" OR "requirements engineering" OR "software testing" OR "software maintenance" OR DevOps OR AIOps))], [1929], [326], [9], [1],
+    [Scopus], [TITLE-ABS-KEY(("software engineering" OR "software development" OR "software engineer\*" OR "software developer\*") AND ("generative AI" OR "large language model\*" OR LLM\* OR "AI agent\*" OR "agentic coding" OR "vibe coding" OR "AI-assisted" OR "AI-driven development" OR "AI coding assistant\*" OR "artificial intelligence") AND ("soft skills" OR "critical thinking" OR "technical communication" OR "prompt engineering" OR collaborat\* OR teamwork OR "human-AI collaboration"))], [1514], [256], [37], [3],
 
-    [ArXiv], [cat:cs.SE AND (abs:"software development life cycle" OR abs:"software development lifecycle" OR abs:"SDLC" OR abs:"requirements engineering" OR abs:"software testing" OR abs:"software maintenance" OR abs:"DevOps") AND (abs:"large language model" OR abs:"LLM" OR abs:"generative AI" OR abs:"AI agent" OR abs:"agentic" OR abs:"vibe coding")], [545], [472], [14], [2],
+    [ArXiv], [(cat:cs.SE OR cat:cs.HC) AND (abs:"soft skills" OR abs:"critical thinking" OR abs:"prompt engineering" OR abs:"collaboration" OR abs:"communication" OR abs:"teamwork" OR abs:"human-AI collaboration") AND (abs:"large language model" OR abs:"LLM" OR abs:"generative AI" OR abs:"AI agent" OR abs:"vibe coding" OR abs:"AI-assisted") AND (abs:"software engineer" OR abs:"software developer" OR abs:"software development")], [580], [580], [23], [2],
 
-    [Science Direct], [("generative AI" OR "large language model" OR "AI agent") AND ("software development life cycle" OR SDLC OR "software lifecycle" OR "requirements engineering" OR "software testing")], [911], [357], [57], [1],
+    [Science Direct], [("software engineering" OR "software development") AND ("generative AI" OR "large language model" OR "AI agent") AND ("soft skills" OR "critical thinking" OR collaboration OR "prompt engineering")], [2826], [1098], [23], [0],
 
     // Fila Total
-    [Total], [], [5530], [1479], [154], [*7*],
+    [Total], [], [7802], [2411], [122], [*9*],
   ),
   caption: [Resultados de la búsqueda 4],
 ) <busqueda-4>
