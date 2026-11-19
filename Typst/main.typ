@@ -177,42 +177,22 @@ debido a la investigación de nuevos métodos y sobre todo a las tecnologías e 
 de cómputo. También es cierto que hay principios que permanecen vigentes y que fundamentan
 el enfoque sistemático del desarrollo. Para #cite(<11645215>, form: "prose"), la abstracción,
 el refinamiento sucesivo, divide y vencerás, y, a favor de hacer software para el ciudadano común,
-la integración de los resultados de investigación científica en software interdisciplinar (Internet
-de las Cosas, algoritmos genéticos, etc.). Es así como la Ingeniería de Software ha tenido cambios
-constantes que se han dirigido desde un enfoque en el hardware hacia una visión centrada en el
-usuario. El software ya no es solamente un sistema de uso científico o ingenieril,
+la integración de los resultados de investigación científica en software interdisciplinar (Internet de las Cosas, algoritmos genéticos, etc.). Es así como la Ingeniería de Software ha tenido cambios constantes que se han dirigido desde un enfoque en el hardware hacia una visión centrada en el usuario. El software ya no es solamente un sistema de uso científico o ingenieril,
 sino que se ha convertido en un producto de uso cotidiano accesible para el público general.
 
 Por otro lado, la historia de la inteligencia artificial como disciplina también ha tenido avances
 cada vez más rápidos en los campos de deep learning y redes neuronales profundas. Pero fue en el
-año de 2024 cuando aumentaron las herramientas y tecnologías potenciadas por asistentes de codificación
-que el uso de inteligencia artificial en el desarrollo de software cobró relevancia. Los agentes de
-IA ya eran capaces de interactuar con herramientas de terceros, realizar búsquedas en la web, y actuar
-sobre el entorno digital, dejando de ser una herramienta secundaria a un componente activo en el
-desarrollo. Para 2025, el científico Andrej Karpathy hizo uso del concepto de “Vibe Coding” para
-referirse a la generación de código mediante lenguaje natural.
+año de 2024 cuando aumentaron las herramientas y tecnologías potenciadas por asistentes de codificación que el uso de inteligencia artificial en el desarrollo de software cobró relevancia. Los agentes de IA ya eran capaces de interactuar con herramientas de terceros, realizar búsquedas en la web, y actuar sobre el entorno digital, dejando de ser una herramienta secundaria a un componente activo en el desarrollo. Para 2025, el científico Andrej Karpathy hizo uso del concepto de “Vibe Coding” para referirse a la generación de código mediante lenguaje natural.
 
-Como ingeniería, siempre ha sido de interés el aumentar la eficiencia en el desarrollo de proyectos.
-Primariamente, las dinámicas en los equipos de trabajo, los procesos y metodologías como Scrum han
-agilizado los tiempos de los proyectos, pero el uso de inteligencia artificial ha mejorado considerablemente
-el ritmo de trabajo. #cite(<11404330>, form: "prose") señalan que se han observado tiempos de desarrollo
-que se reducen de meses a semanas o días al examinar los resultados del vibe coding en proyectos reales.
+Como ingeniería, siempre ha sido de interés el aumentar la eficiencia en el desarrollo de proyectos. Primariamente, las dinámicas en los equipos de trabajo, los procesos y metodologías como Scrum han agilizado los tiempos de los proyectos, pero el uso de inteligencia artificial ha mejorado considerablemente el ritmo de trabajo. #cite(<11404330>, form: "prose") señalan que se han observado tiempos de desarrollo que se reducen de meses a semanas o días al examinar los resultados del vibe coding en proyectos reales.
 Los equipos de trabajo pueden dedicar más tiempo a la innovación, prototipos y lógica de negocio
 debido a la automatización de generación de código.
 
-Frente a esta situación, quienes ignoran el uso de la inteligencia artificial
-se encuentran en posición de desventaja para hacer frente a las necesidades del
-desarrollo moderno, que exige tiempos y dinámicas más rápidas. Si el vibe coding
-resulta ahora indispensable para el desarrollo, entonces el problema es reconocer
-las nuevas prácticas, habilidades, procesos y metodologías que respondan
-eficientemente a las tendencias actuales.
+Frente a esta situación, quienes ignoran el uso de la inteligencia artificial se encuentran en posición de desventaja para hacer frente a las necesidades del desarrollo moderno, que exige tiempos y dinámicas más rápidas. Si el vibe coding resulta ahora indispensable para el desarrollo, entonces el problema es reconocer las nuevas prácticas, habilidades, procesos y metodologías que respondan eficientemente a las tendencias actuales.
 
 A partir de esta transición del desarrollo tradicional hacia un modelo fundamentado en
 la orquestación mediante agentes autónomos de inteligencia artificial, surge la necesidad
-de replantear los principios actuales de la disciplina. Este trabajo pretende determinar cuáles son
-las metodologías, competencias críticas y criterios educativos que deben estructurar la formación y el
-desempeño de los ingenieros de software, que garanticen la efectividad operativa del desarrollo.
-
+de replantear los principios actuales de la disciplina. Este trabajo pretende determinar cuáles son las metodologías, prácticas de ingeniería de software y dinámicas de colaboración, comunicación y pensamiento crítico que garantizen la efectividad operativa del desarrollo.
 #pagebreak()
 
 = Revisión teórica
@@ -271,27 +251,13 @@ de inteligencia artificial en el desarrollo de software.
 
 = Justificación del problema 
 
-La industria de desarrollo de software actual demanda tiempos de entrega cada vez más rápidos y cortos
-plazos de tiempo, lo cual implica presión que generan ciertos conflictos que afectan el proyecto.
-#cite(<7961895>, form: "prose") indican que los problemas asociados con la presión en tiempos de entrega
-incluyen una mayor probabilidad de cometer errores, mayor número de defectos, trabajo posterior al despliegue,
-falta de coordinación en los equipos de trabajo, etc.
+La industria de desarrollo de software actual demanda tiempos de entrega cada vez más rápidos y cortos plazos de tiempo, lo cual implica presión que generan ciertos conflictos que afectan el proyecto. #cite(<7961895>, form: "prose") indican que los problemas asociados con la presión en tiempos de entrega incluyen una mayor probabilidad de cometer errores, mayor número de defectos, trabajo posterior al despliegue, falta de coordinación en los equipos de trabajo, etc.
 
-En el panorama actual, la construcción de software utilizando IA generativa ha significado una
-contribución importante para acelerar los proyectos y mejorar los tiempos de entrega. 
-Evaluaciones realizadas por #cite(<11438791>, form: "prose"), tras analizar 50 proyectos de software,
-encontraron que un framework impulsado por IA generativa logró la reducción de 50.6% en el tiempo de
-desarrollo en todo el ciclo de vida del software.
+En el panorama actual, la construcción de software utilizando IA generativa ha significado una contribución importante para acelerar los proyectos y mejorar los tiempos de entrega. Evalua­ciones realizadas por #cite(<11438791>, form: "prose"), tras analizar 50 proyectos de software, se encontró que un framework impulsado por IA generativa logró la reducción de 50.6% en el tiempo de desarrollo en todo el ciclo de vida del software.
 
-La investigación actual tiene como proposito determinar las tendencias actuales de construcción de
-software y se justifica debido a implicaciones relevantes para con las exigencias de la industria del
-desarrollo. Debido al cambio de paradigma de la forma de hacer ingeniería de software las funciones de
-los ingenieros se han replanteado y es pertinente identificar formalmente cuáles son estas nuevas prácticas,
-metodologías, y enfoques actuales. Asimismo, tiene importancia académica, ya que si los modos de desarrollo
-ha cambiado, entonces para cubrir estos conocimientos se requieren otras rutas de aprendizaje.
+La investigación actual tiene como propósito determinar las tendencias actuales de cons­trucción de software y se justifica debido a implicaciones relevantes para con las exigencias de la industria del desarrollo. Debido al cambio de paradigma de la forma de hacer ingeniería de software las funciones de los ingenieros se han replanteado y es pertinente identificar formalmente cuáles son estas nuevas prácticas, metodologías, y enfoques actuales.
 
-Esta investigación se considera viable ya que se fundamenta en la revisión documental de literatura científica
-publicada entre 2020 y 2026 procedente de las bases de datos IEEE, ACM Digital Library y SpringerLink. 
+Esta investigación se considera viable ya que se fundamenta en la revisión documental de literatura científica publicada entre 2020 y 2026 procedente de las bases de datos IEEE, ACM Digital Library, Science Direct, Scopus y Arxiv. 
 
 = Diseño de la investigación
 
